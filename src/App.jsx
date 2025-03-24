@@ -183,7 +183,7 @@ function AppContent() {
       <ShipDetails />
       <DateDetails />
       <Equalizers />
-      <div className="z-0 fixed bg-gray-900 top-0 left-0 w-full max-w-full" style={{ width: '100vw', paddingLeft: '0', height: '100vh', overflow: 'auto' }}>
+      <div className="z-0 fixed bg-gray-950 top-0 left-0 w-full " style={{ width: '100vw', paddingLeft: '0', height: '100vh', overflow: 'auto' }}>
         <Routes>
           <Route path="/" element={<LoadingPage />} />
           <Route path="/home" element={<Home />} />

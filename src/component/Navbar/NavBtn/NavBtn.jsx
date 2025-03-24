@@ -10,7 +10,7 @@ function NavBtn({link, name, icon:Icon}) {
     }
   return (
     <a href={link}>
-        <div className='flex justify-center items-center relative transform -translate-x-1/2 transition-transform duration-500 hover:translate-x-0' onMouseEnter={audioHandler}>
+        <div className='flex justify-center items-center relative transform -translate-x-12 sm:-translate-x-1/2 transition-transform duration-500 hover:translate-x-0' onMouseEnter={audioHandler}>
             <div className='flex flex-col justify-center items-center'>
                 <div className='flex justify-center items-center'>
                     <div className="w-0 h-0 border-l-[4px] border-l-transparent border-r-[0px] border-r-transparent border-b-[4px] border-b-myYellow"></div>
@@ -36,7 +36,7 @@ function NavBtn({link, name, icon:Icon}) {
                 </div>
             </div>
             <div className='border border-myYellow bg-transparent'>
-                <Icon className='text-4xl m-2 p-2'/>
+                <Icon className='text-2xl sm:text-4xl m-2 p-1 sm:p-2'/>
             </div>
         </div>
     </a>

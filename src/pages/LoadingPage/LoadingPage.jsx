@@ -36,7 +36,7 @@ const LoadingBar = () => {
 
   return (
     <motion.div
-      className="absolute top-0 left-0 h-1 bg-cyberYellow"
+      className="absolute top-2/3 left-1/2 h-6 bg-cyberYellow"
       initial={{ width: 0 }}
       animate={{ width: `${progress}%` }}
       transition={{ duration: 0.5, ease: 'easeInOut' }}
@@ -46,65 +46,37 @@ const LoadingBar = () => {
 
 function LoadingPage() {
   return (
-    <div className="relative w-full h-screen">
+    <div className="relative w-full h-screen flex flex-col items-center justify-center">
       <div className="absolute w-full h-full">
         <Canvas>
           <PerspectiveCamera makeDefault position={[-3, 2, 2]} fov={90} />
-          <Suspense
-            fallback={
-              <Html>
-                <p className="text-white text-xl animate-pulse w-full">Loading Model...</p>
-              </Html>
-            }
-          >
+          <Suspense fallback={
+            <Html>
+              <p className="text-white text-xl animate-pulse">Loading Model...</p>
+            </Html>
+          }>
             <ambientLight intensity={0.6} color="#FFFF00" />
-            <directionalLight
-              intensity={1}
-              color="#FFFF00"
-              position={[-5, 5, 150]}
-              castShadow
-            />
-            <OrbitControls
-              enableZoom={true}
-              maxPolarAngle={Math.PI / 2}
-              minPolarAngle={Math.PI / 4}
-            />
+            <directionalLight intensity={1} color="#FFFF00" position={[-5, 5, 150]} castShadow />
+            <OrbitControls enableZoom={true} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 4} />
             <Car />
           </Suspense>
           <Environment preset="sunset" />
         </Canvas>
       </div>
-      <div className="absolute bottom-1/4 left-1/4 text-white z-10 font-chakra">
-        <div className="flex flex-col justify-center items-center ml-96">
-          <p className="text-5xl font-bold text-myYellow mb-6 animate-pulse">Loading.......</p>
-          <motion.div className="flex flex-col text-sm font-bold text-cyberYellow mt-5">
-            <motion.span
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -10 }}
-              transition={{ duration: 0.2, delay: 10 }}
-            >
-              Initializing Storm Profile, Connecting to Cyber Station...
-            </motion.span>
-            <motion.span
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -10 }}
-              transition={{ duration: 0.2, delay: 20 }}
-            >
-              <span className="text-myYellow">Status:</span> Syncing neural interfaces...
-            </motion.span>
-            <motion.span
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -10 }}
-              transition={{ duration: 0.2, delay: 30 }}
-            >
-              All systems online. Cyberstation operational.
-            </motion.span>
-          </motion.div>
-          <LoadingBar />
-        </div>
+      <div className="absolute top-2/3  left-1/2 transform -translate-x-1/2 text-white z-10 font-chakra text-center px-4 md:px-0">
+        <p className="text-4xl md:text-5xl font-bold text-myYellow mb-6 animate-pulse">Loading.......</p>
+        <motion.div className="flex flex-col text-sm font-bold text-cyberYellow mt-5">
+          <motion.span initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.2, delay: 10 }}>
+            Initializing Storm Profile, Connecting to Cyber Station...
+          </motion.span>
+          <motion.span initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.2, delay: 20 }}>
+            <span className="text-myYellow">Status:</span> Syncing neural interfaces...
+          </motion.span>
+          <motion.span initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.2, delay: 30 }}>
+            All systems online. Cyberstation operational.
+          </motion.span>
+        </motion.div>
+        <LoadingBar />
       </div>
     </div>
   );

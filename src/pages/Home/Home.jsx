@@ -25,7 +25,7 @@ function AnimatedText({ text, speed = 100 }) {
 
     return (
         <motion.div
-            className="flex text-5xl font-bold text-myYellow mt-5 font-chakra"
+            className="flex text-3xl sm:text-4xl md:text-5xl font-bold text-myYellow mt-5 font-chakra"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
@@ -74,22 +74,22 @@ function Home() {
                 <Environment preset="sunset" />
             </Canvas>
         </div>
-        <div className='absolute top-28 lg:top-80 2xl:top-96 left-24 lg:left-44  text-white z-10 font-chakra w-10/12 2xl:w-full'>
-            <div className='flex flex-col justify-center items-center md:items-start'>
-                <p className='text-xs md:text-lg text-white'>Hello,</p>
-                <div className="flex justify-center items-center text-xl md:text-5xl space-x-4">
+        <div className='absolute top-28 sm:top-32 lg:top-72 2xl:top-96 left-12 sm:left-32 lg:left-44  text-white z-10 font-chakra w-10/12 2xl:w-full'>
+            <div className='flex flex-col justify-center items-start'>
+                <p className='text-lg md:text-lg text-white'>Hello,</p>
+                <div className="flex justify-center items-center text-3xl sm:text-4xl md:text-5xl space-x-4">
                     <p className='text-white'>I</p>
                     <p className='text-myYellow'>Am</p>
-                    <div className="flex justify-center items-center text-xl md:text-5xl">
+                    <div className="flex justify-center items-center text-3xl sm:text-4xl md:text-5xl">
                         <p className='text-white'>T</p>
                         <p className='text-myYellow'>hathsara</p>
                     </div>
-                    <div className="flex justify-center items-center text-xl md:text-5xl">
+                    <div className="flex justify-center items-center text-3xl sm:text-4xl md:text-5xl">
                         <p className='text-white'>B</p>
                         <p className='text-myYellow'>andara</p>
                     </div>
                 </div>
-                <div className="flex justify-center items-center text-sm md:text-2xl space-x-2">
+                <div className="flex justify-center items-center text-xs sm:text-lg md:text-xl space-x-2">
                     <div className="flex justify-center items-center">
                         <p className='text-white'>P</p>
                         <p className='text-myYellow'>ioneering</p>
@@ -131,7 +131,7 @@ function Home() {
                         <p className='text-myYellow'>he</p>
                     </div>
                 </div>
-                <div className='flex justify-center items-center text-sm md:text-2xl space-x-3'>
+                <div className='flex justify-center items-center text-sm sm:text-lg md:text-2xl space-x-3'>
                     <div className="flex justify-center items-center">
                         <p className='text-white'>U</p>
                         <p className='text-myYellow'>niversity</p>
@@ -149,7 +149,7 @@ function Home() {
                         <p className='text-myYellow'>ayewardenepura</p>
                     </div>
                 </div>
-                <div className='h-20'>
+                <div className='h-12 sm:h-16 md:h-20'>
                     <motion.div
                         key={roles[currentRole]}
                         initial={{ opacity: 0, y: 10 }}
@@ -161,14 +161,14 @@ function Home() {
                     </motion.div>
                 </div>
                 <div className='flex justify-center items-center mt-8 space-x-6'>
-                    <button className='bg-myYellow text-black font-bold px-8 py-5 rounded-lg hover:animate-bounce'>
+                    <button className='bg-myYellow text-black font-bold px-4 md:px-8 py-3 md:py-5 rounded-lg hover:animate-bounce'>
                         HIRE ME
                     </button>
-                    <button className='bg-myYellow text-black font-bold px-8 py-5 rounded-lg hover:animate-bounce'>
+                    <button className='bg-myYellow text-black font-bold px-4 md:px-8 py-3 md:py-5 rounded-lg hover:animate-bounce'>
                         DOWNLOAD CV
                     </button>
                 </div>
-                <div className='flex justify-center items-center text-xl mt-10 text-myYellow space-x-8'>
+                <div className='flex justify-center items-center text-lg md:text-xl mt-10 text-myYellow space-x-5 sm:space-x-7 md:space-x-8'>
                     <a href=''>
                         <FaGithub />
                     </a>

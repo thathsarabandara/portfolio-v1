@@ -8,7 +8,7 @@ const timelineData = [
     title: "STORY BEGINS HERE ........",
     subhead: 'ROOT OF THE STORY',
     institute: 'ST. ALOYSIUS COLLEAGE - GALLE',
-    para: 'hey cheif , story begins here ...............',
+    para: 'Hey Cheif, Story Begins Here ......',
     para1: 'I am a passionate and dedicated individual with a strong foundation in science and technology.',
     para2: 'I completed my secondary education at St. Aloysius College, achieving outstanding results with 9 As in my O/L examination.',
     para3: 'In my A/L examination, I obtained A in Physics, B in Mathematics, and B in Chemistry, demonstrating my analytical skills and problem-solving abilities.',
@@ -20,7 +20,7 @@ const timelineData = [
     title: "TECH ENGINE STARTS HERE ........",
     subhead: 'ROOT OF THE METAVERSE',
     institute: 'University of sri- Jayewardenepura',
-    para: 'hey cheif , story begins here ...............',
+    para: 'Hey Cheif, Tech Path Begins Here ......',
     para1: 'I am a passionate and dedicated individual with a strong foundation in science and technology.',
     para2: 'Currently, I am pursuing a Bachelor of Computing (Hons) in Software Engineering at the Faculty of Computing, University of Sri Jayewardenepura.',
     para3: 'With a deep interest in programming, problem-solving, and emerging technologies, I aim to innovate and contribute to the ever-evolving world of technology..',
@@ -42,7 +42,7 @@ export default function Education() {
   };
 
   return (
-    <div className="relative w-full min-h-screen text-white font-chakra p-8 flex flex-col items-center bg-gray-900">
+    <div className="relative w-full min-h-screen text-white font-chakra p-8 flex flex-col items-center ">
       <div className="absolute top-20 left-16">
         <div className="flex items-center space-x-3">
           <div className="p-2 flex justify-center items-center w-10 h-10 border border-myYellow animate-pulse">
@@ -91,11 +91,11 @@ export default function Education() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 20 }}
             transition={{ duration: 0.4 }}
-            className="flex flex-col lg:flex-row justify-center items-start mt-8 p-8 w-full max-w-[2000px] bg-gray-900 transition-all text-center "
+            className="flex flex-col xl:flex-row justify-center items-start mt-8 p-8 w-full max-w-[2000px] transition-all text-center "
           >
-            <div className="flex justify-center items-center gap-0 w-full lg:w-6/12">
+            <div className="flex justify-center items-center gap-0 w-full lg:w-10/12 xl:w-6/12">
               <p
-                className="transform -rotate-90 w-full md:w-auto glitch-text hidden sm:flex"
+                className="transform -rotate-90 w-full -mr-20 lg:-mr-6 md:w-auto glitch-text hidden md:flex"
                 data-text={timelineData[selected].title}
               >
                 {timelineData[selected].subhead}
@@ -108,7 +108,7 @@ export default function Education() {
                   <p className="text-xl mb-4">
                     {timelineData[selected].para}
                   </p>
-                  <div className="ml-5 text-start text-xl">
+                  <div className="ml-5 text-start text-sm sm:text-xl">
                     <p className="mb-4">{timelineData[selected].para1}</p>
                     <p className="mb-4">{timelineData[selected].para2}</p>
                     <p className="mb-4">{timelineData[selected].para3}</p>
@@ -118,8 +118,8 @@ export default function Education() {
             </div>
 
             <div className="flex flex-col justify-center items-start mt-6 w-10/12 md:w-6/12 sm:ml-32 lg:mt-40">
-              <p className="text-start mb-4 font-bold text-myYellow">year: {timelineData[selected].year}</p>
-              <div className="border-b-2 border-l-2 border-myYellow px-24 sm:px-32">
+              <p className="text-start mb-4 font-bold text-myYellow">Year: {timelineData[selected].year}</p>
+              <div className="border-b-2 border-l-2 border-myYellow px-20 sm:px-32">
                 <Hologram imageUrl={timelineData[selected].image} />
               </div>
               <p className="text-lg mt-4 font-bold text-myYellow">{timelineData[selected].vision}</p>
