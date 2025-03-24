@@ -17,6 +17,12 @@ import Skills from './pages/Skills/Skills';
 import music1 from './assets/audio/Home.mp3';
 import music2 from './assets/audio/Home.mp3';
 import music3 from './assets/audio/Home.mp3';
+import AboutMe from './pages/AboutMe/AboutMe';
+import Licenses from './pages/Licenses/Licenses';
+import Projects from './pages/Projects/Projects';
+import Services from './pages/Services/Services';
+import Contact from './pages/Contact/Contact';
+import LoadingPage from './pages/LoadingPage/LoadingPage';
 
 function AppContent() {
   const [isPlaying, setIsPlaying] = useState(true);
@@ -147,9 +153,15 @@ function AppContent() {
       <Equalizers />
       <div className="z-0 fixed bg-gray-900 top-0 left-0 w-full max-w-full" style={{ width: '100vw', paddingLeft: '0' }}>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/education" element={<Education />} />
+          <Route path="/" element={<LoadingPage />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/aboutme" element={<Education />} />
+          <Route path="/education" element={<AboutMe />} />
+          <Route path="/licenses" element={<Licenses />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/services" element={<Services />} />
           <Route path="/skills" element={<Skills />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
       <ReactPlayer
