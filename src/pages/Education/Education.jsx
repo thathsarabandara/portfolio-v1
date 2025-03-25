@@ -81,7 +81,7 @@ export default function Education() {
               }`}>
                 {item.year}
               </p>
-              <p className={`mt-2 text-sm font-semibold transition-all duration-300 ${
+              <p className={`mt-2 text-xs font-semibold transition-all duration-300 ${
                 selected === index ? "text-myYellow" : "text-gray-400"
               }`}>
                 {item.title}
@@ -98,7 +98,7 @@ export default function Education() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 20 }}
             transition={{ duration: 0.4 }}
-            className="flex flex-col xl:flex-row justify-center items-start mt-8 p-8 w-full max-w-[2000px] transition-all text-center "
+            className="flex flex-col xl:flex-row justify-center items-start mt-8 p-8 w-full max-w-[2000px] transition-all text-center"
           >
             <div className="flex justify-center items-center gap-0 w-full lg:w-10/12 xl:w-6/12">
               <motion.div 
@@ -118,7 +118,7 @@ export default function Education() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, ease:"easeInOut" , delay: 2 }}
               >
-                <div className="mx-2 bg-myYellow text-black text-2xl px-5 xl:px-10 xl:pr-32 font-bold" data-text={timelineData[selected].institute}>
+                <div className="mx-2 bg-myYellow text-black text-lg md:text-xl lg:text-2xl px-5 xl:px-10 xl:pr-32 font-bold" data-text={timelineData[selected].institute}>
                   {timelineData[selected].institute}
                 </div>
               </motion.div>  
@@ -148,7 +148,7 @@ export default function Education() {
               {...fadeInUp}
               transition={{ duration: 1 , delay: 7 }}
             >
-              <div className="flex flex-col justify-center items-start mt-6 w-10/12 md:w-6/12 sm:ml-32 lg:mt-40">
+              <div className="flex flex-col justify-center items-start mt-6 w-10/12 md:w-6/12 sm:ml-32 lg:mt-40 mb-16">
                 <p className="text-start mb-4 font-bold text-myYellow">Year: {timelineData[selected].year}</p>
                 <div className="border-b-2 border-l-2 border-myYellow px-20 sm:px-32">
                   <Hologram imageUrl={timelineData[selected].image} />

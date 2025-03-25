@@ -140,52 +140,65 @@ function Contact() {
             </p>
           </motion.div>
         </div>
-        <div className='grid grid-cols-8 gap-5 mt-12'>
-          <AnimatedIcon link="https://github.com/your-profile" platform="github" delay={0.1} />
-          <AnimatedIcon link="https://stackoverflow.com/users/your-profile" platform="stackoverflow" delay={0.2} />
-          <AnimatedIcon link="https://www.linkedin.com/in/your-profile" platform="linkedin" delay={0.3} />
-          <AnimatedIcon link="https://discord.com/users/your-profile" platform="discord" delay={0.4} />
-          <AnimatedIcon link="https://twitter.com/your-profile" platform="twitter" delay={0.5} />
-          <AnimatedIcon link="https://mail.google.com/mail/u/0/" platform="gmail" delay={0.6} />
-          <AnimatedIcon link="https://www.facebook.com/your-profile" platform="facebook" delay={0.7} />
-          <AnimatedIcon link="https://www.instagram.com/your-profile" platform="instagram" delay={0.8} />
+        <motion.div 
+            className="grid grid-cols-8 gap-5 mt-12"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: 'easeInOut', delay:7 }}
+          >
+            <AnimatedIcon link="https://github.com/your-profile" platform="github" delay={0.1} />
+            <AnimatedIcon link="https://stackoverflow.com/users/your-profile" platform="stackoverflow" delay={0.2} />
+            <AnimatedIcon link="https://www.linkedin.com/in/your-profile" platform="linkedin" delay={0.3} />
+            <AnimatedIcon link="https://discord.com/users/your-profile" platform="discord" delay={0.4} />
+            <AnimatedIcon link="https://twitter.com/your-profile" platform="twitter" delay={0.5} />
+            <AnimatedIcon link="https://mail.google.com/mail/u/0/" platform="gmail" delay={0.6} />
+            <AnimatedIcon link="https://www.facebook.com/your-profile" platform="facebook" delay={0.7} />
+            <AnimatedIcon link="https://www.instagram.com/your-profile" platform="instagram" delay={0.8} />
+          </motion.div>
+        <div className=''>
+          
         </div>
-        <div className="flex flex-col items-center justify-center w-10/12 mt-4">
-          <form onSubmit={handleSubmit}>
-            <InputContainer
-              label="Name"
-              value={formData.name}
-              onChange={(value) => handleChange('name', value)}
-              placeholder="Enter your name"
-              error={errors.email}
-              width="50%"
-              height="auto"
-            />
-            
-            <InputContainer
-              label="Email"
-              type="email"
-              value={formData.email}
-              onChange={(value) => handleChange('email', value)}
-              error={errors.email}
-              placeholder="Enter your email"
-              width="100%"
-              height="auto"
-            />
-            
-            <InputContainer
-              label="Description"
-              value={formData.description}
-              onChange={(value) => handleChange('description', value)}
-              error={errors.description} 
-              placeholder="Enter a description"
-              width="100%"
-              height="auto"
-            />
+        <motion.div 
+            className="flex flex-col items-center justify-center w-10/12 mt-4 mb-28"
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, ease: 'easeInOut', delay:8 }}
+          >
+            <form onSubmit={handleSubmit}>
+              <InputContainer
+                label="Name"
+                value={formData.name}
+                onChange={(value) => handleChange('name', value)}
+                placeholder="Enter your name"
+                error={errors.email}
+                width="50%"
+                height="auto"
+              />
+              
+              <InputContainer
+                label="Email"
+                type="email"
+                value={formData.email}
+                onChange={(value) => handleChange('email', value)}
+                error={errors.email}
+                placeholder="Enter your email"
+                width="100%"
+                height="auto"
+              />
+              
+              <InputContainer
+                label="Description"
+                value={formData.description}
+                onChange={(value) => handleChange('description', value)}
+                error={errors.description} 
+                placeholder="Enter a description"
+                width="100%"
+                height="auto"
+              />
 
-          <button type="submit" className="mt-8  border-2 px-8 py-3 rounded-lg hover:bg-white hover:text-black hover:animate-pulse">Submit</button>
-          </form>
-        </div>
+            <button type="submit" className="mt-8  border-2 px-8 py-3 rounded-lg hover:bg-white hover:text-black hover:animate-pulse">Submit</button>
+            </form>
+          </motion.div>
       </div>
     </div>
   )

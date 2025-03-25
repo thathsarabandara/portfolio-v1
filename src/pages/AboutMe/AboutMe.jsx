@@ -191,7 +191,7 @@ function AboutMe() {
               transition={{ duration: 1, delay: 1 }}
             >
               <motion.pre
-                className="whitespace-pre-wrap overflow-hidden"
+                className="whitespace-pre-wrap overflow-hidden mb-24"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 2, delay: 1 }}
