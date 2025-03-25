@@ -107,7 +107,7 @@ function AppContent() {
   );
 
   const MusicSection = () => (
-    <div className='z-10 fixed left-0 lg:left-1/3 top-0 mt-8 sm:mt-16 md:mt-16 lg:mt-8 ml-28 sm:ml-64 md:ml-44 lg:ml-16 xl:ml-36 flex flex-col md:flex-row justify-center items-center animate-pulse'>
+    <div className='z-10 fixed left-0 lg:left-1/3 top-0 mt-8 sm:mt-16 md:mt-16 lg:mt-8 ml-28 sm:ml-64 md:ml-44 lg:ml-16 xl:ml-28 flex flex-col md:flex-row justify-center items-center animate-pulse'>
       <p className='font-bold text-xs sm:text-sm'>{musicName}</p>
       <div className='flex justify-center items-center'>
         <button onClick={togglePlay} className="mx-3">
@@ -167,7 +167,7 @@ function AppContent() {
   );
 
   const Equalizers = () => (
-    <div className="z-10 fixed left-0 lg:left-1/3 mb-5 ml-10 sm:ml-36 lg:ml-4 bottom-0 w-10/12 animate-pulse">
+    <div className="z-10 fixed left-0 lg:left-1/3 mb-5 ml-10 sm:ml-36 lg:ml-24 bottom-0 w-10/12 animate-pulse">
       <Equalizer isPlaying={isPlaying} />
     </div>
   );
