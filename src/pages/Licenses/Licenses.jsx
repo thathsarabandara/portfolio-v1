@@ -297,9 +297,9 @@ function Licenses() {
             ))}
             </motion.div>
 
-          <div className="flex justify-center items-center space-x-4 mt-4 mt-4">
+          <div className="flex flex-col lg:flex-row justify-center items-center space-x-4 mt-4 mt-4">
             <motion.div 
-              className="flex flex-col justify-center items-start w-1/4"
+              className="flex flex-col justify-center items-start w-11/12 sm:w-7/12 md:w-5/12 lg:w-1/4"
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 , delay: 2}}
@@ -334,9 +334,9 @@ function Licenses() {
                 </motion.div>
               </div>
             </motion.div>
-            <div className='flex justify-center items-center w-3/4 mt-32'>
+            <div className='flex flex-col md:flex-row justify-center items-center lg:w-3/4 mt-32'>
               <motion.div
-                  className="w-1/3 overflow-y-auto max-h-72 border-l-2 border-b-2 p-2"
+                  className="md:w-1/3 overflow-y-auto max-h-72 border-l-2 border-b-2 p-2"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1 , delay: 6}}
@@ -353,9 +353,9 @@ function Licenses() {
                   </div>
                 ))}
                 </motion.div>
-              <div className="flex w-2/3 p-4 rounded-lg">
+              <div className="flex flex-col sm:flex-row md:w-2/3 p-4 rounded-lg">
                 <motion.div
-                  className="flex flex-col justify-center items-start w-3/4"
+                  className="flex flex-col justify-center items-start sm:w-3/4"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1 , delay: 7}}
@@ -391,7 +391,7 @@ function Licenses() {
                   </div>
                 </motion.div>
                 <motion.div
-                  className="flex flex-col justify-center items-end 1/4"
+                  className="flex flex-col justify-center items-end sm:w-1/4"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1 , delay: 11}}
@@ -407,7 +407,7 @@ function Licenses() {
                     </motion.div>
                     <p className='w-6 h-6 border-b-2 border-l-2'></p>
                   </div>
-                  <div className='flex flex-col justify-center items-center border-t-2 border-r-2 -mt-1 mr-6'>
+                  <div className='flex flex-col justify-center items-center border-t-2 border-r-2 -mt-1 mr-6 mb-20'>
                     {selectedCourse.skills && selectedCourse.skills.length > 0 ? (
                       selectedCourse.skills.map((skill, index) => (
                         <motion.div
