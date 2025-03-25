@@ -2,6 +2,13 @@ import React, { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Hologram from "../../component/Hologram/Hologram";
 
+const fadeInUp = {
+  initial: { opacity: 0, y: 20 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.6, ease: "easeInOut" },
+};
+
+
 const timelineData = [
   { 
     year: "2007-2021", 
@@ -48,7 +55,7 @@ export default function Education() {
           <div className="p-2 flex justify-center items-center w-10 h-10 border border-myYellow animate-pulse">
             <div className="w-8 h-5 bg-myYellow"></div>
           </div>
-          <h2 className="text-3xl md:text-xl font-bold text-myYellow tracking-widest neon-text">
+          <h2 className="text-lg md:text-xl font-bold text-myYellow tracking-widest neon-text">
             EDUCATION ZONE
           </h2>
         </div>
@@ -94,36 +101,61 @@ export default function Education() {
             className="flex flex-col xl:flex-row justify-center items-start mt-8 p-8 w-full max-w-[2000px] transition-all text-center "
           >
             <div className="flex justify-center items-center gap-0 w-full lg:w-10/12 xl:w-6/12">
-              <p
-                className="transform -rotate-90 w-full -mr-20 lg:-mr-6 md:w-auto glitch-text hidden md:flex"
-                data-text={timelineData[selected].title}
+              <motion.div 
+                {...fadeInUp}
+                transition={{ duration: 1 , delay: 3 }}
               >
-                {timelineData[selected].subhead}
-              </p>
+                <p
+                  className="transform -rotate-90 w-full -mr-20 lg:-mr-6 md:w-auto glitch-text hidden md:flex"
+                  data-text={timelineData[selected].title}
+                >
+                  {timelineData[selected].subhead}
+                </p>
+              </motion.div>
               <div className="flex flex-col justify-center items-start border-l-2 border-myYellow pb-32">
-                <div className="mx-2 bg-myYellow text-black text-2xl px-5 xl:px-10 xl:pr-32 font-bold glitch-text" data-text={timelineData[selected].institute}>
+              <motion.div 
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, ease:"easeInOut" , delay: 2 }}
+              >
+                <div className="mx-2 bg-myYellow text-black text-2xl px-5 xl:px-10 xl:pr-32 font-bold" data-text={timelineData[selected].institute}>
                   {timelineData[selected].institute}
                 </div>
+              </motion.div>  
                 <div className="flex flex-col justify-center items-start ml-4 mt-4 text-white">
-                  <p className="text-xl mb-4">
+                  <motion.div 
+                    {...fadeInUp}
+                    transition={{ duration: 1 , delay: 4 }}
+                  >
+                    <p className="text-xl mb-4">
                     {timelineData[selected].para}
                   </p>
-                  <div className="ml-5 text-start text-sm sm:text-xl">
-                    <p className="mb-4">{timelineData[selected].para1}</p>
-                    <p className="mb-4">{timelineData[selected].para2}</p>
-                    <p className="mb-4">{timelineData[selected].para3}</p>
-                  </div>
+                  </motion.div>
+                  <motion.div 
+                    {...fadeInUp}
+                    transition={{ duration: 1 , delay: 5 }}
+                  >
+                    <div className="ml-5 text-start text-sm sm:text-xl">
+                      <p className="mb-4">{timelineData[selected].para1}</p>
+                      <p className="mb-4">{timelineData[selected].para2}</p>
+                      <p className="mb-4">{timelineData[selected].para3}</p>
+                    </div>
+                  </motion.div>
                 </div>
               </div>
             </div>
-
-            <div className="flex flex-col justify-center items-start mt-6 w-10/12 md:w-6/12 sm:ml-32 lg:mt-40">
-              <p className="text-start mb-4 font-bold text-myYellow">Year: {timelineData[selected].year}</p>
-              <div className="border-b-2 border-l-2 border-myYellow px-20 sm:px-32">
-                <Hologram imageUrl={timelineData[selected].image} />
+            <motion.div
+              {...fadeInUp}
+              transition={{ duration: 1 , delay: 7 }}
+            >
+              <div className="flex flex-col justify-center items-start mt-6 w-10/12 md:w-6/12 sm:ml-32 lg:mt-40">
+                <p className="text-start mb-4 font-bold text-myYellow">Year: {timelineData[selected].year}</p>
+                <div className="border-b-2 border-l-2 border-myYellow px-20 sm:px-32">
+                  <Hologram imageUrl={timelineData[selected].image} />
+                </div>
+                <p className="text-lg mt-4 font-bold text-myYellow">{timelineData[selected].vision}</p>
               </div>
-              <p className="text-lg mt-4 font-bold text-myYellow">{timelineData[selected].vision}</p>
-            </div>
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
