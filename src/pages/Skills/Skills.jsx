@@ -194,14 +194,14 @@ function Skills() {
       </motion.div>
 
       <div className="relative w-full h-full max-w-8xl mt-32 flex flex-col justify-center items-start">
-        <div className='flex flex-col justify-center items-start ml-16'>
+        <div className='flex flex-col justify-center items-start ml-4 md:ml-16'>
           <motion.div 
             className="flex justify-center items-start mb-3"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: 'easeInOut', delay:2 }}
           >
-            <HiMiniRocketLaunch  className='mr-6 text-xl'/>
+            <HiMiniRocketLaunch  className='mr-6 text-5xl md:text-xl'/>
             <p className='text-start'>
               I am a full-stack developer and AI enthusiast with a passion for building intelligent and scalable systems. I specialize in React.js, Next.js, and Tailwind CSS for dynamic UIs and Node.js, Express.js, and MySQL/MongoDB for efficient backend development.
             </p>
@@ -212,7 +212,7 @@ function Skills() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: 'easeInOut', delay:4 }}
           >
-            <HiMiniRocketLaunch  className='mr-6 text-xl'/>
+            <HiMiniRocketLaunch  className='mr-6 text-5xl md:text-xl'/>
             <p className='text-start'>
             With expertise in Docker, Kubernetes, and Redis caching, I ensure high-performance and scalable deployments. I integrate CI/CD pipelines for seamless development workflows and leverage AWS & Firebase for cloud solutions.
             </p>
@@ -223,15 +223,15 @@ function Skills() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: 'easeInOut', delay:6 }}
           >
-            <HiMiniRocketLaunch  className='mr-6 text-xl'/>
+            <HiMiniRocketLaunch  className='mr-6 text-5xl md:text-xl'/>
             <p className='text-start'>
               As an AI enthusiast, I explore machine learning, NLP, and automation, integrating AI-driven insights into applications. Strong in data structures, algorithms, and problem-solving, I thrive in fast-paced, collaborative environments using Agile, Git, and DevOps practices
             </p>
           </motion.div>
         </div>
-        <div className='flex justify-start items-start ml-16 w-full mt-6 space-x-3'>
+        <div className='flex flex-col-reverse md:flex-row justify-center md:justify-start items-start ml-4 md:ml-16 w-full mt-6 space-x-3'>
         <motion.div 
-            className="flex flex-col justify-center items-end ml-16 w-2/12"
+            className="flex flex-col justify-center items-start md:items-end ml-4 md:ml-16 w-11/12 md:w-2/12 mb-5"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: 'easeInOut', delay:7 }}
@@ -255,7 +255,7 @@ function Skills() {
               ))}
             </div>
           </motion.div>
-          <div className='grid grid-cols-12 w-8/12 gap-5'>
+          <div className='grid grid-cols-6 md:grid-cols-12 w-10/12 md:w-8/12 gap-5 mb-5'>
             {techLogos.map((tech, index) => (
               <AnimatedLogo key={tech.name} src={tech.src} delay={(index + 24) * 0.3} />
             ))}

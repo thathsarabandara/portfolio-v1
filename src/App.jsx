@@ -100,14 +100,14 @@ function AppContent() {
   }, [location]);
 
   const HazardSection = () => (
-    <div className='z-10 fixed left-0 top-0 ml-4 mt-4 flex flex-col justify-center items-start font-bold text-xs sm:text-sm hidden sm:flex'>
+    <div className='z-10 fixed left-0 top-0 ml-4 mt-1 flex flex-col justify-center items-start font-bold text-xs sm:text-sm'>
       <p className='animate-pulse'>ON board time : 10:10</p>
       <p className='animate-pulse'>Hazard Alert ! Please beware of it</p>
     </div>
   );
 
   const MusicSection = () => (
-    <div className='z-10 fixed left-0 lg:left-1/3 top-0 mt-8 sm:mt-16 md:mt-16 lg:mt-8 ml-28 sm:ml-64 md:ml-44 lg:ml-16 xl:ml-28 flex flex-col md:flex-row justify-center items-center animate-pulse'>
+    <div className='z-10 fixed left-0 lg:left-1/3 top-0 mt-12 sm:mt-16 md:mt-16 lg:mt-8 ml-20 sm:ml-56 md:ml-44 lg:ml-16 xl:ml-28 flex flex-col md:flex-row justify-center items-center animate-pulse'>
       <p className='font-bold text-xs sm:text-sm'>{musicName}</p>
       <div className='flex justify-center items-center'>
         <button onClick={togglePlay} className="mx-3">
@@ -130,7 +130,7 @@ function AppContent() {
   );
 
   const ControlSection = () => (
-    <div className='z-10 fixed right-0 top-0 mt-4 mr-4 flex flex-col justify-center items-start font-bold text-xs sm:text-sm hidden sm:flex animate-pulse'>
+    <div className='z-10 fixed right-0 top-0 mt-1 mr-4 flex flex-col justify-center items-start font-bold text-xs sm:text-sm  animate-pulse'>
       <p>station power : 80%</p>
       <p>oxygen : 40%</p>
       <p>environment : critical</p>
@@ -138,14 +138,14 @@ function AppContent() {
   );
 
   const ShipDetails = () => (
-    <div className='z-10 fixed bottom-0 left-0 mb-4 ml-4 flex flex-col justify-center items-start text-xs sm:text-sm hidden sm:flex'>
+    <div className='z-10 fixed bottom-0 left-0 mb-4 ml-4 flex flex-col justify-center items-start text-xs sm:text-sm'>
       <p className='animate-pulse'>year.2047</p>
       <p className='animate-pulse'>somewhere in space : cyberstation Nova 9.0.1</p>
     </div>
   );
 
   const DateDetails = () => (
-    <div className='z-10 fixed bottom-0 right-0 mb-2 mr-2 flex justify-center items-center hidden sm:flex animate-pulse'>
+    <div className='z-10 fixed bottom-0 right-0 mb-2 mr-2 flex justify-center items-center animate-pulse'>
       <div className='flex flex-col justify-center items-end mr-2'>
         <div className='flex justify-center items-center'>
           <p className='mr-1 text-xs xs:text-xs sm:text-sm'>19</p>
@@ -161,13 +161,13 @@ function AppContent() {
         </div>
       </div>
       <div className='bg-white text-black'>
-        <FaBiohazard className='text-3xl xs:text-4xl sm:text-6xl animate-spin-slow' />
+        <FaBiohazard className='text-4xl xs:text-4xl sm:text-5xl animate-spin-slow' />
       </div>
     </div>
   );
 
   const Equalizers = () => (
-    <div className="z-10 fixed left-0 lg:left-1/3 mb-5 ml-10 sm:ml-36 lg:ml-24 bottom-0 w-10/12 animate-pulse">
+    <div className="z-10 fixed left-0 lg:left-1/3 mb-16 sm:mb-4 ml-10 sm:ml-44 md:ml-64 lg:ml-24 bottom-0 w-10/12 animate-pulse">
       <Equalizer isPlaying={isPlaying} />
     </div>
   );
