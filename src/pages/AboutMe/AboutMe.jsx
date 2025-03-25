@@ -13,8 +13,6 @@ const fadeInUp = {
 
 function AboutMe() {
   const [text, setText] = useState('');
-  const [index, setIndex] = useState(0);
-  const [currentLine, setCurrentLine] = useState(0);
   const [isCursorVisible, setIsCursorVisible] = useState(true);
 
   const fullText = [
@@ -170,8 +168,9 @@ function AboutMe() {
         </div>
 
         <motion.div 
-          className="flex flex-col p-6  text-white rounded-2xl shadow-lg border border-myYellow relative overflow-hidden w-11/12 lg:w-7/12 sm:ml-12 animate-pulse"
-          {...fadeInUp}
+          className="flex flex-col p-6  text-white border-t-2 border-l-2 border-myYellow relative overflow-hidden w-11/12 lg:w-7/12 lg:mt-12 sm:ml-12 animate-pulse"
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 , delay: 8 }}
         >
           <div className="absolute top-0 left-0 w-full h-full bg-myYellow opacity-10 blur-3xl"></div>
@@ -192,7 +191,7 @@ function AboutMe() {
               transition={{ duration: 1, delay: 1 }}
             >
               <motion.pre
-                className="whitespace-pre-wrap overflow-hidden"
+                className="whitespace-pre-wrap overflow-hidden mb-24"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 2, delay: 1 }}

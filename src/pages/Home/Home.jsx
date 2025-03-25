@@ -161,10 +161,10 @@ function Home() {
                     </motion.div>
                 </div>
                 <div className='flex justify-center items-center mt-8 space-x-6'>
-                    <button className='bg-myYellow text-black font-bold px-3 md:px-5 py-2 md:py-3 rounded-lg hover:animate-bounce'>
+                    <button className='bg-myYellow text-xs md:text-sm text-black font-bold px-3 md:px-5 py-2 md:py-3 rounded-lg hover:animate-bounce'>
                         HIRE ME
                     </button>
-                    <button className='bg-myYellow text-black font-bold px-3 md:px-5 py-2 md:py-3 rounded-lg hover:animate-bounce'>
+                    <button className='bg-myYellow text-xs md:text-sm text-black font-bold px-3 md:px-5 py-2 md:py-3 rounded-lg hover:animate-bounce'>
                         DOWNLOAD CV
                     </button>
                 </div>
