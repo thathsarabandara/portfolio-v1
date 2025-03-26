@@ -183,7 +183,7 @@ function Skills() {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
       >
-        <div className="flex items-center space-x-3">
+        <div className="flex  items-center space-x-3">
           <div className="p-2 flex justify-center items-center w-10 h-10 border border-myYellow animate-pulse">
             <div className="w-8 h-5 bg-myYellow"></div>
           </div>
