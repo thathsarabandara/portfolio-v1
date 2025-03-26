@@ -255,7 +255,7 @@ function Skills() {
               ))}
             </div>
           </motion.div>
-          <div className='grid grid-cols-6 md:grid-cols-12 w-10/12 md:w-8/12 gap-5 mb-5'>
+          <div className='grid grid-cols-6 md:grid-cols-12 w-10/12 md:w-8/12 gap-5 m'>
             {techLogos.map((tech, index) => (
               <AnimatedLogo key={tech.name} src={tech.src} delay={(index + 24) * 0.3} />
             ))}

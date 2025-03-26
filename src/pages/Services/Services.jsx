@@ -4,28 +4,29 @@ import { MdWork } from 'react-icons/md'
 
 function ServiceCard({ service }) {
   return (
-    <div className="flex justify-start items-end w-full px-4">
-      {/* Main Card */}
-      <div className="flex flex-col justify-start items-start w-[250px] sm:w-[500px] md:w-[300px] max-w-3xl h-56 border-2 border-r-0 px-4 py-5 
-        group transition-all duration-300 hover:border-yellow-400 hover:shadow-[0_0_20px_#facc15]">
-        <div className="text-4xl text-yellow-300">
-          {service.icon}
-        </div>
-        <h3 className="text-xl font-semibold mt-4 text-white group-hover:text-yellow-300">
-          {service.title}
-        </h3>
-        <p className="text-gray-400 mt-2 group-hover:text-yellow-200">
-          {service.description}
-        </p>
-      </div>
-
-      {/* Right Border & Arrow Indicator */}
-      <div className="flex flex-col justify-center items-center mt-5 transition-all duration-300">
-        <div className="w-8 h-48 border-r-2 border-t-2 border-gray-300 hover:border-yellow-400"></div>
-        <div className="w-0 h-0 border-l-[0px] border-l-transparent border-r-[32px] border-r-transparent 
-          border-t-[32px] border-gray-300 group-hover:border-yellow-400"></div>
-      </div>
+    <div className="flex justify-start items-end w-full px-4 group">
+  {/* Main Card */}
+  <div className="flex flex-col justify-start items-start w-[250px] sm:w-[500px] md:w-[300px] max-w-3xl h-56 border-2 border-r-0 px-4 py-5 
+    transition-all duration-300 group-hover:border-yellow-400  group-hover:shadow-r-none">
+    <div className="text-4xl text-yellow-300">
+      {service.icon}
     </div>
+    <h3 className="text-xl font-semibold mt-4 text-white group-hover:text-yellow-300">
+      {service.title}
+    </h3>
+    <p className="text-gray-400 mt-2 group-hover:text-yellow-200">
+      {service.description}
+    </p>
+  </div>
+
+  {/* Right Border & Arrow Indicator */}
+  <div className="flex flex-col justify-center items-center mt-5 transition-all duration-300">
+    <div className="w-8 h-48 border-r-2 border-t-2 border-gray-300 group-hover:border-yellow-400"></div>
+    <div className="w-0 h-0 border-l-[0px] border-l-transparent border-r-[32px] border-r-transparent 
+      border-t-[32px] border-gray-300 group-hover:border-yellow-400"></div>
+  </div>
+</div>
+
   );
 }
 
