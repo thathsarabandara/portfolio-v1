@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import Hologram from '../../component/Hologram/Hologram';
 import frontCertificate from '../../assets/images/certificates/meta-frontend/certificate.png'
 import frontCourse1 from '../../assets/images/certificates/meta-frontend/course1.png';
@@ -296,21 +296,31 @@ function Licenses() {
               </motion.div>
             ))}
             </motion.div>
-
-          <div className="flex flex-col lg:flex-row justify-center items-center space-x-4 mt-4 mt-4">
+        <AnimatePresence mode='wait'>
+          <motion.div
+                key={selectedCertificate.id} 
+                className="flex flex-col lg:flex-row justify-center items-center space-x-4 mt-4"
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: 50 }} 
+                transition={{ duration: 1, delay: 1 }}
+              >
             <motion.div 
+              key={selectedCertificate.id}
               className="flex flex-col justify-center items-start w-11/12 sm:w-7/12 md:w-5/12 lg:w-1/4"
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1 , delay: 2}}
+              exit={{ opacity: 0, x: 50 }}
+              transition={{ duration: 1 , delay: 1 }}
             >
               <div className='flex justify-center items-center'>
                 <p className='w-6 h-6 border-b-2 border-r-2'></p>
                 <motion.div 
+                  key={selectedCertificate.id}
                   className="flex flex-col justify-center items-start"
                   initial={{ opacity: 0, x: -50 }}
                   animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 1 , delay: 3}}
+                  transition={{ duration: 1 , delay: 1.5}}
                 >
                   <p className='font-bold text-lg ml-4'>{selectedCertificate.name}</p>
                 </motion.div>
@@ -320,7 +330,7 @@ function Licenses() {
                   className="flex flex-col justify-center items-start ml-6"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 1 , delay: 4}}
+                  transition={{ duration: 1 , delay: 2}}
                 >
                   <img src={selectedCertificate.image} alt='certificatelogo' className='w-10/12 mt-4'/>
                 </motion.div>
@@ -328,7 +338,7 @@ function Licenses() {
                   className="flex flex-col justify-center items-start"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 1 , delay: 5}}
+                  transition={{ duration: 1 , delay: 2.5}}
                 >
                   <p className='text-sm mt-4 mb-16'>{selectedCertificate.descrip}</p>
                 </motion.div>
@@ -339,11 +349,11 @@ function Licenses() {
                   className="md:w-1/3 overflow-y-auto max-h-72 border-l-2 border-b-2 p-2"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 1 , delay: 6}}
+                  transition={{ duration: 1 , delay: 3}}
                 >
                   {selectedCertificate.courses.map((course) => (
                   <div
-                    key={course.id}
+                  key={selectedCertificate.id}
                     onClick={() => setSelectedCourse(course)}
                     className={`cursor-pointer p-2 border-b ${
                       selectedCourse.id === course.id ? "bg-myYellow font-bold text-black" : ""
@@ -353,82 +363,92 @@ function Licenses() {
                   </div>
                 ))}
                 </motion.div>
-              <div className="flex flex-col sm:flex-row md:w-2/3 p-4 rounded-lg">
+                <AnimatePresence mode='wait'>
                 <motion.div
-                  className="flex flex-col justify-center items-start sm:w-3/4"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 1 , delay: 7}}
+                  key={selectedCourse.id} 
+                  className="flex flex-col sm:flex-row md:w-2/3 p-4 rounded-lg"
+                  initial={{ opacity: 0, x: -50 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: 50 }} 
+                  transition={{ duration: 1 }}
                 >
-                  <div className='flex justify-center items-center'>
-                    <p className='w-6 h-6 border-b-2 border-r-2'></p>
-                    <motion.div
-                      className="ml-4"
-                      initial={{ opacity: 0, x: 20 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 1 , delay: 8}}
-                    >
-                      <p className='font-bold text-lg'>{selectedCourse.name}</p>
-                    </motion.div>
-                  </div>
-                  <div className='flex flex-col justify-center items-center border-t-2 border-l-2 -mt-1 ml-6'>
-                    <motion.div
-                      className="ml-12"
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 1 , delay: 9}}
-                    >
-                      <Hologram imageUrl={selectedCourse.image}  />
-                    </motion.div>
-                    <motion.div
-                      className="ml-6"
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 1 , delay: 10}}
-                    >
-                      <p className='text-sm mt-4 mb-16 '>{selectedCourse.details}</p>
-                    </motion.div>
-                  </div>
-                </motion.div>
-                <motion.div
-                  className="flex flex-col justify-center items-end sm:w-1/4"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 1 , delay: 11}}
-                >
-                  <div className='flex justify-center items-center'>
-                    <motion.div
-                      className="mr-4"
-                      initial={{ opacity: 0, x: -20 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 1 , delay: 12}}
-                    >
-                      <p className='font-bold text-sm '>Skills Gained</p>
-                    </motion.div>
-                    <p className='w-6 h-6 border-b-2 border-l-2'></p>
-                  </div>
-                  <div className='flex flex-col justify-center items-center border-t-2 border-r-2 -mt-1 mr-6 mb-20'>
-                    {selectedCourse.skills && selectedCourse.skills.length > 0 ? (
-                      selectedCourse.skills.map((skill, index) => (
-                        <motion.div
-                          className="pl-28"
-                          initial={{ opacity: 0, x: -20 }}
-                          animate={{ opacity: 1, x: 0 }}
-                          transition={{ duration: 1 , delay: (index+24) * 0.5}}
-                        >
-                          <span key={index} className="">
-                            {skill}
-                          </span>
-                        </motion.div>
-                      ))
-                    ) : (
-                      <p className="text-sm text-gray-400">No skills listed</p>
-                    )}
-                  </div>
-                </motion.div>
-              </div>
+                  <motion.div
+                    className="flex flex-col justify-center items-start sm:w-3/4"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1 , delay: 3.5}}
+                  >
+                    <div className='flex justify-center items-center'>
+                      <p className='w-6 h-6 border-b-2 border-r-2'></p>
+                      <motion.div
+                        className="ml-4"
+                        initial={{ opacity: 0, x: 20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 1 , delay: 4}}
+                      >
+                        <p className='font-bold text-lg'>{selectedCourse.name}</p>
+                      </motion.div>
+                    </div>
+                    <div className='flex flex-col justify-center items-center border-t-2 border-l-2 -mt-1 ml-6'>
+                      <motion.div
+                        className=""
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1 , delay: 4.5}}
+                      >
+                        <Hologram imageUrl={selectedCourse.image}  />
+                      </motion.div>
+                      <motion.div
+                        className="ml-6"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1 , delay: 5}}
+                      >
+                        <p className='text-sm mt-4 mb-16 '>{selectedCourse.details}</p>
+                      </motion.div>
+                    </div>
+                  </motion.div>
+                  <motion.div
+                    className="flex flex-col justify-center items-end sm:w-1/4"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1 , delay: 5.5}}
+                  >
+                    <div className='flex justify-center items-center'>
+                      <motion.div
+                        className="mr-4"
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 1 , delay: 6}}
+                      >
+                        <p className='font-bold text-sm '>Skills Gained</p>
+                      </motion.div>
+                      <p className='w-6 h-6 border-b-2 border-l-2'></p>
+                    </div>
+                    <div className='flex flex-col justify-center items-center border-t-2 border-r-2 -mt-1 mr-6 mb-20'>
+                      {selectedCourse.skills && selectedCourse.skills.length > 0 ? (
+                        selectedCourse.skills.map((skill, index) => (
+                          <motion.div
+                            className="pl-28"
+                            initial={{ opacity: 0, x: -20 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 1 , delay: (index+12) * 0.5}}
+                          >
+                            <span key={index} className="">
+                              {skill}
+                            </span>
+                          </motion.div>
+                        ))
+                      ) : (
+                        <p className="text-sm text-gray-400">No skills listed</p>
+                      )}
+                    </div>
+                  </motion.div>
+                </motion.div>  
+              </AnimatePresence>
             </div>
-          </div>
+          </motion.div>
+          </AnimatePresence>
         </div>
       </div>
     </div>
