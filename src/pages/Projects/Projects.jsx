@@ -27,6 +27,7 @@ const ProjectTypes = [
         Techs: [FaHtml5, FaReact, RiTailwindCssFill, SiMysql],
         Code: "",
         link: "",
+        video: "/video/webIntro.mp4"
       },
       {
         id: 202,
@@ -38,6 +39,7 @@ const ProjectTypes = [
         Techs: [FaHtml5, FaReact, RiTailwindCssFill, SiMysql],
         Code: "",
         link: "",
+        video: "/video/webIntro.mp4"
       },
     ],
   },
@@ -56,6 +58,7 @@ const ProjectTypes = [
         Techs: [FaHtml5, FaReact, RiTailwindCssFill, SiMysql],
         Code: "",
         link: "",
+        video: "/video/webIntro.mp4"
       },
       {
         id: 402,
@@ -67,6 +70,7 @@ const ProjectTypes = [
         Techs: [FaHtml5, FaReact, RiTailwindCssFill, SiMysql],
         Code: "",
         link: "",
+        video: "/video/webIntro.mp4"
       },
     ],
   },
@@ -85,6 +89,7 @@ const ProjectTypes = [
         Techs: [FaHtml5, FaReact, RiTailwindCssFill, SiMysql],
         Code: "",
         link: "",
+        video: "/video/webIntro.mp4"
       },
       {
         id: 502,
@@ -96,6 +101,7 @@ const ProjectTypes = [
         Techs: [FaHtml5, FaReact, RiTailwindCssFill, SiMysql],
         Code: "",
         link: "",
+        video: "/video/webIntro.mp4"
       },
     ],
   },
@@ -114,6 +120,7 @@ const ProjectTypes = [
         Techs: [FaHtml5, FaReact, RiTailwindCssFill, SiMysql],
         Code: "",
         link: "",
+        video: "/video/webIntro.mp4"
       },
       {
         id: 302,
@@ -125,6 +132,7 @@ const ProjectTypes = [
         Techs: [FaHtml5, FaReact, RiTailwindCssFill, SiMysql],
         Code: "",
         link: "",
+        video: "/video/webIntro.mp4"
       },
     ],
   },
@@ -359,7 +367,7 @@ function Projects() {
                                     />
 
                                     <group position={[0, -1, 0]}>
-                                        <Laptop />
+                                        <Laptop videoSrc={selectedProject.video} />
                                     </group>
 
                                 </Suspense>

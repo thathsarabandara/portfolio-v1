@@ -10,10 +10,10 @@ Title: Laptop
 import React, { useEffect } from 'react'
 import { useGLTF, useAnimations, useVideoTexture } from '@react-three/drei'
 
-export function Laptop(props) {
+export function Laptop({ videoSrc, ...props }) {
   const group = React.useRef()
   const { nodes, materials, animations } = useGLTF('/laptop/scene.gltf')
-  const videoTexture = useVideoTexture('/video/webIntro.mp4');
+  const videoTexture = useVideoTexture(videoSrc);
   const { actions , names} = useAnimations(animations, group)
   console.log(names)
   useEffect(() => {
