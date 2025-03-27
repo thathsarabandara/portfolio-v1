@@ -190,7 +190,7 @@ function Projects() {
     }, []);
 
   return (
-    <div className="relative w-full min-h-screen text-white font-chakra p-8 flex flex-col items-center bg-black">
+    <div className="relative w-full min-h-screen text-white font-chakra p-8 flex flex-col items-center">
       <motion.div
         className="absolute top-20 left-8 md:left-16"
         initial={{ opacity: 0, x: -50 }}
@@ -383,7 +383,7 @@ function Projects() {
                       transition={{ duration: 1, delay: 5.5 }}
                     >
                         <div className='relative w-10/12 h-full border-b-2 border-l-2 ml-7 -mb-1'>
-                            <div className='absolute bg-gray-600 blur-3xl w-full h-full'></div>
+                            <div className='absolute bg-gray-600 blur-3xl w-full h-full opacity-50'></div>
                             <Canvas shadows>
                                 <PerspectiveCamera makeDefault position={[8, 8, 30]} fov={fov} />
 
