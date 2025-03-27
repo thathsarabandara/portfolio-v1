@@ -49,6 +49,22 @@ import genAICertificate from '../../assets/images/certificates/ibm-genai-softwar
 import genAICourse1 from '../../assets/images/certificates/ibm-genai-software/course1.png';
 import genAICourse2 from '../../assets/images/certificates/ibm-genai-software/course2.png';
 import genAICourse3 from '../../assets/images/certificates/ibm-genai-software/course3.png';
+import aiforSoftCertificate from '../../assets/images/certificates/ibm-aiFound-every/certificate.png';
+import aiforSoftCourse1 from '../../assets/images/certificates/ibm-aiFound-every/course1.png';
+import aiforSoftCourse2 from '../../assets/images/certificates/ibm-aiFound-every/course2.png';
+import aiforSoftCourse3 from '../../assets/images/certificates/ibm-aiFound-every/course3.png';
+import aiforSoftCourse4 from '../../assets/images/certificates/ibm-aiFound-every/course4.png';
+import aiDevolopCertificate from '../../assets/images/certificates/ibm-aiDeveloper/certificate.png';
+import aiDevolopCourse1 from '../../assets/images/certificates/ibm-aiDeveloper/course1.png';
+import aiDevolopCourse2 from '../../assets/images/certificates/ibm-aiDeveloper/course2.png';
+import aiDevolopCourse3 from '../../assets/images/certificates/ibm-aiDeveloper/course3.png';
+import aiDevolopCourse4 from '../../assets/images/certificates/ibm-aiDeveloper/course4.png';
+import aiDevolopCourse5 from '../../assets/images/certificates/ibm-aiDeveloper/course5.png';
+import aiDevolopCourse6 from '../../assets/images/certificates/ibm-aiDeveloper/course6.png';
+import aiDevolopCourse7 from '../../assets/images/certificates/ibm-aiDeveloper/course7.png';
+import aiDevolopCourse8 from '../../assets/images/certificates/ibm-aiDeveloper/course8.png';
+import aiDevolopCourse9 from '../../assets/images/certificates/ibm-aiDeveloper/course9.png';
+import aiDevolopCourse10 from '../../assets/images/certificates/ibm-aiDeveloper/course10.png';
 
 const professionalCertificates = [
   {
@@ -463,7 +479,270 @@ const professionalCertificates = [
         "verify": "https://coursera.org/verify/ML3PD2OG5L3D",
       }
     ]
+  },
+  {
+    "id": 7,
+    "institute": "IBM",
+    "name": "AI Foundations for Everyone",
+    "descrip": "The IBM AI Foundations for Everyone Professional Certificate program provides learners with foundational knowledge of Artificial Intelligence (AI). This program covers key AI concepts, including machine learning, deep learning, and generative AI. Students will explore AI applications, IBM Watson AI services, and how AI-powered chatbots can be built and deployed. Through hands-on exercises, quizzes, and projects, learners will develop practical skills in AI and its real-world applications.",
+    "image": aiforSoftCertificate,
+    "verify": "https://coursera.org/verify/specialization/ZBAC1Q9OBW2U",
+    "courses": [
+      {
+        "id": 801,
+        "name": "Introduction to Artificial Intelligence (AI)",
+        "image": aiforSoftCourse1,
+        "details": "This course introduces the fundamentals of AI, including its history, applications, and impact on various industries. Students will learn about machine learning, deep learning, and AI ethics. Practical exercises will help them understand how AI models are built and deployed.",
+        "skills": ["Artificial Intelligence", "Machine Learning", "Deep Learning", "AI Ethics"],
+        "verify": "https://coursera.org/verify/B52LLNT2PSQL"
+      },
+      {
+        "id": 802,
+        "name": "Generative AI: Introduction and Applications",
+        "image": aiforSoftCourse2,
+        "details": "This course explores generative AI, its real-world applications, and ethical considerations. Students will learn how generative AI models create new content, including text and images. The course also introduces AI-powered tools used in various industries.",
+        "skills": ["Generative AI", "AI Applications", "Machine Learning", "Ethical AI"],
+        "verify": "https://coursera.org/verify/F2U56RPPNNB2"
+      },
+      {
+        "id": 803,
+        "name": "Generative AI: Prompt Engineering Basics",
+        "image": aiforSoftCourse3,
+        "details": "This course provides an introduction to prompt engineering techniques for generative AI models. Students will learn how to craft effective prompts for AI-powered tools like ChatGPT and DALL·E. The course includes practical exercises to optimize prompt effectiveness.",
+        "skills": ["Prompt Engineering", "Generative AI", "Natural Language Processing"],
+        "verify": "https://coursera.org/verify/9VGYQMIXPD5R"
+      },
+      {
+        "id": 804,
+        "name": "Building AI Powered Chatbots Without Programming",
+        "image": aiforSoftCourse4,
+        "details": "In this course, students will learn how to create AI-powered chatbots without requiring programming skills. Using IBM Watson, they will design, train, and deploy a chatbot for web-based applications. The course includes hands-on exercises to build intelligent virtual assistants.",
+        "skills": ["Chatbot Development", "AI Services", "IBM Watson", "Natural Language Processing"],
+        "verify": "https://coursera.org/verify/PW8155OC57C6"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "institute": "IBM",
+    "name": "IBM AI Developer",
+    "descrip": "The IBM AI Developer Professional Certificate program provides job-ready AI skills in just 6 months. Learners gain practical experience building AI-powered applications, chatbots, and web solutions using Python, Flask, and generative AI technologies. The program covers fundamental AI concepts, generative AI, software development lifecycle (SDLC), and web development. Upon completion, learners will have industry-recognized certification and a portfolio showcasing AI-driven solutions.",
+    "image": aiDevolopCertificate,
+    "verify": "https://coursera.org/verify/professional-cert/MB7WE2TCZ8K9",
+    "courses": [
+      {
+        "id": 901,
+        "name": "Introduction to Software Engineering",
+        "image": aiDevolopCourse1,
+        "details": "This course introduces fundamental software engineering concepts, including the Software Development Lifecycle (SDLC), agile methodologies, and best practices for software design and development.",
+        "skills": ["Software Engineering", "SDLC", "Agile Methodologies"],
+        "verify": "https://coursera.org/verify/AUSU48XGV2XM"
+      },
+      {
+        "id": 902,
+        "name": "Introduction to Artificial Intelligence (AI)",
+        "image": aiDevolopCourse2,
+        "details": "An introduction to the key concepts, applications, and ethical considerations of Artificial Intelligence, including machine learning, neural networks, and real-world AI use cases.",
+        "skills": ["Artificial Intelligence", "Machine Learning", "Neural Networks"],
+        "verify": "https://coursera.org/verify/B52LLNT2PSQL"
+      },
+      {
+        "id": 903,
+        "name": "Generative AI: Introduction and Applications",
+        "image": aiDevolopCourse3,
+        "details": "This course covers the fundamentals of generative AI, including models like GPT and their applications in text generation, image synthesis, and AI-powered solutions.",
+        "skills": ["Generative AI", "NLP", "Machine Learning"],
+        "verify": "https://coursera.org/verify/F2U56RPPNNB2"
+      },
+      {
+        "id": 904,
+        "name": "Generative AI: Prompt Engineering Basics",
+        "image": aiDevolopCourse4,
+        "details": "A deep dive into prompt engineering techniques, helping students optimize AI-generated responses for various applications, including chatbots and content creation.",
+        "skills": ["Prompt Engineering", "AI Optimization", "Natural Language Processing"],
+        "verify": "https://coursera.org/verify/9VGYQMIXPD5R"
+      },
+      {
+        "id": 905,
+        "name": "Introduction to HTML, CSS, & JavaScript",
+        "image": aiDevolopCourse5,
+        "details": "This course provides a hands-on introduction to frontend web development, covering HTML, CSS, JavaScript, and best practices for responsive and interactive UI design.",
+        "skills": ["HTML", "CSS", "JavaScript", "Responsive Design"],
+        "verify": "https://coursera.org/verify/UST0RWOWMNM2"
+      },
+      {
+        "id": 906,
+        "name": "Python for Data Science, AI & Development",
+        "image": aiDevolopCourse6,
+        "details": "An in-depth course on Python programming with a focus on data science and AI development, covering libraries like NumPy, Pandas, and Scikit-learn.",
+        "skills": ["Python", "Data Science", "AI Development"],
+        "verify": "https://coursera.org/verify/IZZZW01AJHYP"
+      },
+      {
+        "id": 907,
+        "name": "Developing AI Applications with Python and Flask",
+        "image": aiDevolopCourse7,
+        "details": "Students will learn to build and deploy AI-powered web applications using Python and Flask, including API development and AI model integration.",
+        "skills": ["Python", "Flask", "Web Development", "API Development"],
+        "verify": "https://coursera.org/verify/DAS26180VHPN"
+      },
+      {
+        "id": 908,
+        "name": "Building Generative AI-Powered Applications with Python",
+        "image": aiDevolopCourse8,
+        "details": "This course covers the development of AI-powered applications using Python, integrating generative AI models, and optimizing performance.",
+        "skills": ["Generative AI", "Python", "AI Application Development"],
+        "verify": "https://coursera.org/verify/A7Q5995J1ISP"
+      },
+      {
+        "id": 909,
+        "name": "Generative AI: Elevate Your Software Development Career",
+        "image": aiDevolopCourse9,
+        "details": "A strategic course on how generative AI is revolutionizing software development and how professionals can leverage AI-driven tools for productivity.",
+        "skills": ["Generative AI", "Software Engineering", "AI in Development"],
+        "verify": "https://coursera.org/verify/ML3PD2OG5L3D"
+      },
+      {
+        "id": 910,
+        "name": "Software Developer Career Guide and Interview Preparation",
+        "image": aiDevolopCourse10,
+        "details": "This course prepares students for software development job interviews by covering coding challenges, data structures, algorithms, and system design.",
+        "skills": ["Coding Interviews", "Data Structures", "Algorithms", "System Design"],
+        "verify": "https://coursera.org/verify/8FSFF0XKLSQU"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "institute": "IBM",
+    "name": "IBM Full Stack Software Developer",
+    "descrip": "The IBM Full Stack Software Developer program equips learners with essential skills for developing Cloud Native Applications. The program covers front-end technologies like HTML, CSS, JavaScript, React, and Bootstrap, as well as back-end technologies like Node.js, Express, Python, and Django. Learners will also work with cloud technologies such as Containers, Kubernetes, Microservices, and Serverless Functions. The program culminates with hands-on projects, including a capstone, to showcase skills in real-world applications.",
+    "image": "frontCertificate",
+    "verify": "https://coursera.org/verify/professional-cert/LPNIZ6X525B0",
+    "courses": [
+      {
+        "id": 1001,
+        "name": "Introduction to Software Engineering",
+        "image": "frontCourse1",
+        "details": "This course covers the fundamentals of software engineering, including software development methodologies, design patterns, and application architecture.",
+        "skills": ["Software Engineering", "Development Methodologies", "Design Patterns"],
+        "verify": "https://coursera.org/verify/LPNIZ6X525B0"
+      },
+      {
+        "id": 1002,
+        "name": "Introduction to Cloud Computing",
+        "image": "frontCourse2",
+        "details": "This course introduces the basics of cloud computing, covering cloud infrastructure, services, and deployment models.",
+        "skills": ["Cloud Computing", "Cloud Infrastructure", "Cloud Services"],
+        "verify": "https://coursera.org/verify/LPNIZ6X525B0"
+      },
+      {
+        "id": 1003,
+        "name": "Introduction to HTML, CSS, & JavaScript",
+        "image": "frontCourse3",
+        "details": "Learn the basics of front-end web development with HTML, CSS, and JavaScript, and how to structure and style web pages.",
+        "skills": ["HTML", "CSS", "JavaScript"],
+        "verify": "https://coursera.org/verify/LPNIZ6X525B0"
+      },
+      {
+        "id": 1004,
+        "name": "Getting Started with Git and GitHub",
+        "image": "frontCourse4",
+        "details": "Learn how to use Git for version control and GitHub for collaboration, including commits, branches, and pull requests.",
+        "skills": ["Git", "GitHub", "Version Control", "Collaboration"],
+        "verify": "https://coursera.org/verify/LPNIZ6X525B0"
+      },
+      {
+        "id": 1005,
+        "name": "Developing Front-End Apps with React",
+        "image": "frontCourse5",
+        "details": "Learn to build dynamic user interfaces with React, including components, JSX, state management, and event handling.",
+        "skills": ["React", "JSX", "State Management", "Event Handling"],
+        "verify": "https://coursera.org/verify/LPNIZ6X525B0"
+      },
+      {
+        "id": 1006,
+        "name": "Developing Back-End Apps with Node.js and Express",
+        "image": "frontCourse6",
+        "details": "This course covers back-end development using Node.js and Express, including building APIs, working with databases, and handling HTTP requests.",
+        "skills": ["Node.js", "Express", "APIs", "Backend Development"],
+        "verify": "https://coursera.org/verify/LPNIZ6X525B0"
+      },
+      {
+        "id": 1007,
+        "name": "Python for Data Science, AI & Development",
+        "image": "frontCourse7",
+        "details": "Learn Python programming for data science and AI development, including working with libraries like Pandas, NumPy, and Matplotlib.",
+        "skills": ["Python", "Data Science", "AI", "Libraries (Pandas, NumPy)"],
+        "verify": "https://coursera.org/verify/LPNIZ6X525B0"
+      },
+      {
+        "id": 1008,
+        "name": "Developing AI Applications with Python and Flask",
+        "image": "frontCourse8",
+        "details": "Learn how to build AI applications using Python and Flask, including using machine learning models and deploying web applications.",
+        "skills": ["AI", "Python", "Flask", "Machine Learning"],
+        "verify": "https://coursera.org/verify/LPNIZ6X525B0"
+      },
+      {
+        "id": 1009,
+        "name": "Django Application Development with SQL and Databases",
+        "image": "frontCourse9",
+        "details": "This course focuses on developing Django applications, working with SQL databases, and using Django's ORM for data management.",
+        "skills": ["Django", "SQL", "Databases", "ORM"],
+        "verify": "https://coursera.org/verify/LPNIZ6X525B0"
+      },
+      {
+        "id": 1010,
+        "name": "Introduction to Containers w/ Docker, Kubernetes & OpenShift",
+        "image": "frontCourse10",
+        "details": "Learn how to use Docker, Kubernetes, and OpenShift for containerization and orchestration, as well as cloud deployment strategies.",
+        "skills": ["Docker", "Kubernetes", "OpenShift", "Containers"],
+        "verify": "https://coursera.org/verify/LPNIZ6X525B0"
+      },
+      {
+        "id": 1011,
+        "name": "Application Development using Microservices and Serverless",
+        "image": "frontCourse11",
+        "details": "Learn to build scalable applications with microservices and serverless architecture, including deployment and management strategies.",
+        "skills": ["Microservices", "Serverless", "Cloud Native", "Scalable Applications"],
+        "verify": "https://coursera.org/verify/LPNIZ6X525B0"
+      },
+      {
+        "id": 1012,
+        "name": "Full Stack Application Development Capstone Project",
+        "image": "frontCourse12",
+        "details": "The capstone project gives learners the opportunity to apply everything they’ve learned by building a full-stack cloud-native application.",
+        "skills": ["Full Stack Development", "Cloud Native", "Capstone Project", "Application Development"],
+        "verify": "https://coursera.org/verify/LPNIZ6X525B0"
+      },
+      {
+        "id": 1013,
+        "name": "Full Stack Software Developer Assessment",
+        "image": "frontCourse13",
+        "details": "An assessment that evaluates your full-stack development knowledge and skills, preparing you for real-world application development.",
+        "skills": ["Full Stack Development", "Assessment", "Real-World Applications"],
+        "verify": "https://coursera.org/verify/LPNIZ6X525B0"
+      },
+      {
+        "id": 1014,
+        "name": "Generative AI: Elevate your Software Development Career",
+        "image": "frontCourse14",
+        "details": "This course focuses on the impact of generative AI on software development and how to integrate AI techniques into your applications.",
+        "skills": ["Generative AI", "Software Development", "AI Integration"],
+        "verify": "https://coursera.org/verify/LPNIZ6X525B0"
+      },
+      {
+        "id": 1015,
+        "name": "Software Developer Career Guide and Interview Preparation",
+        "image": "frontCourse15",
+        "details": "This course helps learners prepare for software developer interviews, covering coding challenges, system design, and interview strategies.",
+        "skills": ["Interview Preparation", "Coding Challenges", "System Design", "Career Guidance"],
+        "verify": "https://coursera.org/verify/LPNIZ6X525B0"
+      }
+    ]
   }
+  
 ];
 
 
