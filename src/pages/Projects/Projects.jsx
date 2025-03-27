@@ -27,7 +27,7 @@ const ProjectTypes = [
         Techs: [FaHtml5, FaReact, RiTailwindCssFill, SiMysql],
         Code: "",
         link: "",
-        video: "/video/webIntro.mp4"
+        video: "/video/commingSoon.mp4"
       },
       {
         id: 202,
@@ -211,7 +211,7 @@ function Projects() {
         <div className="p-6 w-full max-w-7xl mx-auto">
             <div className='flex flex-col md:flex-row justify-center items-start'>
                 <motion.div
-                    className="w-full overflow-x-scroll whitespace-nowrap flex justify-start items-center space-x-4 pb-4 border-b-2 md:w-1/2w-full overflow-x-auto whitespace-nowrap flex justify-start items-center space-x-4 pb-4 border-b-2 md:w-1/2 scrollbar-hide"
+                    className="w-full overflow-x-auto whitespace-nowrap flex justify-start items-center space-x-4 pb-4 border-b-2 md:w-1/2 scrollbar-hide"
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1 }}
