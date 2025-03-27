@@ -71,7 +71,7 @@ function AboutMe() {
   
 
   return (
-    <div className="relative w-full min-h-screen text-white font-chakra p-8 flex flex-col items-center bg-black">
+    <div className="relative w-full min-h-screen text-white font-chakra p-8 flex flex-col items-center ">
       <motion.div 
         className="absolute top-20 left-8 md:left-16"
         initial={{ opacity: 0, x: -50 }}

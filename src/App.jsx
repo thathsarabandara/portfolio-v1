@@ -31,6 +31,7 @@ import Projects from './pages/Projects/Projects';
 import Services from './pages/Services/Services';
 import Contact from './pages/Contact/Contact';
 import LoadingPage from './pages/LoadingPage/LoadingPage';
+import StarsBackground from './component/StarBackground/StarsBackground';
 
 function AppContent() {
   const [isPlaying, setIsPlaying] = useState(true);
@@ -174,6 +175,7 @@ function AppContent() {
 
   return (
     <div className="relative w-full h-screen font-chakra">
+      <StarsBackground />
       <div className="z-20 fixed left-0 top-1/2 transform -translate-y-1/2">
         <NavBar />
       </div>
@@ -183,7 +185,7 @@ function AppContent() {
       <ShipDetails />
       <DateDetails />
       <Equalizers />
-      <div className="z-0 fixed bg-gray-950 top-0 left-0 w-full " style={{ width: '100vw', paddingLeft: '0', height: '100vh', overflow: 'auto' }}>
+      <div className="z-0 fixed  top-0 left-0 w-full " style={{ width: '100vw', paddingLeft: '0', height: '100vh', overflow: 'auto' }}>
         <Routes>
           <Route path="/" element={<LoadingPage />} />
           <Route path="/home" element={<Home />} />
