@@ -198,7 +198,7 @@ function Contact() {
 
             <button type="submit" className="mt-8  border-2 px-8 py-3 rounded-lg hover:bg-white hover:text-black hover:animate-pulse">Submit</button>
             </form>
-            <p className='text-xl text-center font-bold mt-5'>MEET ME IN THE METAVERSE</p>
+            <p className='text-xl text-center font-bold mt-5'>I WILL MEET YOU IN THE METAVERSE</p>
           </motion.div>
       </div>
     </div>

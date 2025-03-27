@@ -1,15 +1,24 @@
 import React, { Suspense, useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion'
-import { TbWorldWww } from 'react-icons/tb';
-import { FaBrain, FaHtml5, FaReact } from 'react-icons/fa';
-import { RiTailwindCssFill } from 'react-icons/ri';
-import { SiMysql } from 'react-icons/si';
-import frontCourse1 from '../../assets/images/certificates/meta-frontend/course1.png';
+import { TbBrandLaravel, TbBrandReactNative, TbBrandThreejs, TbWorldWww } from 'react-icons/tb';
+import { FaBrain, FaDocker, FaFlask, FaHtml5, FaJava, FaNodeJs, FaPython, FaReact, FaVuejs } from 'react-icons/fa';
+import { RiNextjsFill, RiTailwindCssFill } from 'react-icons/ri';
+import { SiArduino, SiDjango, SiExpress, SiKotlin, SiMysql, SiSpringboot, SiTensorflow } from 'react-icons/si';
 import { Canvas } from '@react-three/fiber';
 import { Environment, Html, OrbitControls, PerspectiveCamera } from '@react-three/drei';
 import { Laptop } from '../../component/3d_component/Laptop';
-import { FaMobileScreen } from 'react-icons/fa6';
+import { FaFlutter, FaMobileScreen } from 'react-icons/fa6';
 import { BsRobot } from 'react-icons/bs';
+import { DiMongodb, DiRedis } from 'react-icons/di';
+import Healthsphere from '../../assets/images/projects/web/healthsphere/logo.png'
+import EMentor from '../../assets/images/projects/web/ementor/logo.png'
+import SixteenClothing from '../../assets/images/projects/web/sixteenclothing/logo.png'
+import FindaJob from '../../assets/images/projects/web/findajob/logo.png'
+import Chefza from '../../assets/images/projects/web/chefza/logo.png'
+import Bigcart from '../../assets/images/projects/web/bigcart/logo.png'
+import strom from '../../assets/images/projects/web/stromsportfolio/logo.png'
+import { BiLogoPostgresql } from 'react-icons/bi';
+import { IoLogoFirebase } from 'react-icons/io5';
 
 const ProjectTypes = [
   {
@@ -19,63 +28,87 @@ const ProjectTypes = [
     projects: [
       {
         id: 201,
-        img: "https://th.bing.com/th/id/OIP.J1VVS2X-BrpRZFWhnt_RzQHaHa?rs=1&pid=ImgDetMain",
+        img: Healthsphere,
         name: "Healthsphere",
         title: "Hospital Management Platform",
         details:
           "HealthSphere is a comprehensive hospital management platform designed to streamline and optimize healthcare operations. Built using a modern MERN stack with MySQL, the platform ensures efficient management of patient records, appointments, billing, and inventory while integrating Redis for caching and Docker for containerized deployment.",
-        Techs: [FaHtml5, FaReact, RiTailwindCssFill, SiMysql],
-        Code: "",
+        Techs: [FaReact, RiTailwindCssFill, SiMysql , FaNodeJs , SiExpress , DiRedis , FaDocker ],
+        Code: "https://github.com/thathsarabandara/HealthSphereProject-",
         link: "",
         video: "/video/commingSoon.mp4"
       },
       {
         id: 202,
-        img: "https://th.bing.com/th/id/OIP.J1VVS2X-BrpRZFWhnt_RzQHaHa?rs=1&pid=ImgDetMain",
+        img: EMentor,
         name: "E-Mentor",
         title: "Learning Management System",
         details:
-          "HealthSphere is a comprehensive hospital management platform designed to streamline and optimize healthcare operations. Built using a modern MERN stack with MySQL, the platform ensures efficient management of patient records, appointments, billing, and inventory while integrating Redis for caching and Docker for containerized deployment.",
-        Techs: [FaHtml5, FaReact, RiTailwindCssFill, SiMysql],
-        Code: "",
+          "E-Mentor is an advanced learning management system (LMS) built with Next.js and MySQL. It provides an interactive platform for students and teachers to manage courses, assignments, and assessments. Redis caching improves response time, while Docker ensures smooth deployment. This LMS is designed for scalability, making it ideal for institutions and online education platforms.",
+        Techs: [FaReact, RiTailwindCssFill, SiMysql , RiNextjsFill , FaDocker , DiRedis ],
+        Code: "https://github.com/thathsarabandara/E-Mentor-frontend",
         link: "",
-        video: "/video/webIntro.mp4"
+        video: "/video/commingSoon.mp4"
       },
       {
         id: 203,
-        img: "https://th.bing.com/th/id/OIP.J1VVS2X-BrpRZFWhnt_RzQHaHa?rs=1&pid=ImgDetMain",
+        img: SixteenClothing,
         name: "Sixteen Clothing",
         title: "MultiVendor Ecommerce Platform",
         details:
-          "HealthSphere is a comprehensive hospital management platform designed to streamline and optimize healthcare operations. Built using a modern MERN stack with MySQL, the platform ensures efficient management of patient records, appointments, billing, and inventory while integrating Redis for caching and Docker for containerized deployment.",
-        Techs: [FaHtml5, FaReact, RiTailwindCssFill, SiMysql],
-        Code: "",
+          "Sixteen Clothing is a Laravel-based multivendor e-commerce platform that facilitates seamless online shopping. The platform supports multiple vendors, product management, order tracking, and secure payments. MySQL serves as the database backbone, while Redis improves performance. Docker integration ensures easy deployment, making it an efficient solution for large-scale e-commerce applications.",
+        Techs: [ TbBrandLaravel, RiTailwindCssFill, SiMysql , DiRedis , FaDocker],
+        Code: "https://github.com/RasuwanK/ecommerce-app",
         link: "",
-        video: "/video/webIntro.mp4"
+        video: "/video/commingSoon.mp4"
       },
       {
         id: 204,
-        img: "https://th.bing.com/th/id/OIP.J1VVS2X-BrpRZFWhnt_RzQHaHa?rs=1&pid=ImgDetMain",
+        img: FindaJob,
         name: "Find a Job",
         title: "Online Job Posting Platform",
         details:
-          "HealthSphere is a comprehensive hospital management platform designed to streamline and optimize healthcare operations. Built using a modern MERN stack with MySQL, the platform ensures efficient management of patient records, appointments, billing, and inventory while integrating Redis for caching and Docker for containerized deployment.",
-        Techs: [FaHtml5, FaReact, RiTailwindCssFill, SiMysql],
-        Code: "",
+          "Find a Job is an online job portal built with React and Spring Boot, providing a streamlined hiring process for job seekers and employers. The platform enables job postings, applications, and interview scheduling. MySQL handles data storage, ensuring fast retrieval of job listings. Designed for efficiency and scalability, it supports both small and large businesses in their recruitment needs.",
+        Techs: [ FaReact, RiTailwindCssFill, FaJava , SiSpringboot,  SiMysql],
+        Code: "https://github.com/thathsarabandara/findajob",
         link: "",
-        video: "/video/webIntro.mp4"
+        video: "/video/commingSoon.mp4"
       },
       {
         id: 205,
-        img: "https://th.bing.com/th/id/OIP.J1VVS2X-BrpRZFWhnt_RzQHaHa?rs=1&pid=ImgDetMain",
+        img: Chefza,
         name: "Chefza",
         title: "Online Food Ordering Platform",
         details:
-          "HealthSphere is a comprehensive hospital management platform designed to streamline and optimize healthcare operations. Built using a modern MERN stack with MySQL, the platform ensures efficient management of patient records, appointments, billing, and inventory while integrating Redis for caching and Docker for containerized deployment.",
-        Techs: [FaHtml5, FaReact, RiTailwindCssFill, SiMysql],
+          "Chefza is an intuitive food ordering platform developed using Vue.js and Django. It enables users to browse restaurant menus, place orders, and track deliveries in real-time. PostgreSQL ensures secure and efficient data management. The platform is designed for scalability, catering to small businesses and large restaurant chains looking to expand their online presence.",
+        Techs: [FaVuejs, RiTailwindCssFill, FaPython, SiDjango , BiLogoPostgresql],
         Code: "",
         link: "",
-        video: "/video/webIntro.mp4"
+        video: "/video/commingSoon.mp4"
+      },
+      {
+        id: 206,
+        img: Bigcart,
+        name: "Bigcart",
+        title: "E-commerce Platform",
+        details:
+          "Bigcart is a full-featured e-commerce platform built using the MERN stack with MongoDB. It offers product listing, cart management, order tracking, and secure payments. With a React frontend and Node.js backend, the platform ensures a seamless shopping experience for users. It is designed for scalability and includes a user-friendly interface for both customers and vendors.",
+        Techs: [FaReact, RiTailwindCssFill, DiMongodb , FaNodeJs, SiExpress],
+        Code: "",
+        link: "",
+        video: "/video/commingSoon.mp4"
+      },
+      {
+        id: 207,
+        img: strom,
+        name: "Strom's Portfolio",
+        title: "My-Portfolio",
+        details:
+          "Strom's Portfolio is a modern, interactive portfolio website showcasing projects, skills, and achievements. Built with React, Tailwind CSS, and Three.js, it features smooth animations, a dynamic 3D experience, and a responsive design. It serves as a personal branding platform to highlight expertise and career milestones.",
+        Techs: [FaReact, RiTailwindCssFill,TbBrandThreejs ],
+        Code: "https://github.com/thathsarabandara/portfolio-v1",
+        link: "",
+        video: "/video/commingSoon.mp4"
       },
     ],
   },
@@ -86,27 +119,27 @@ const ProjectTypes = [
     projects: [
       {
         id: 401,
-        img: "https://th.bing.com/th/id/OIP.J1VVS2X-BrpRZFWhnt_RzQHaHa?rs=1&pid=ImgDetMain",
+        img: "",
         name: "FitFlow",
         title: "Fitness Tracker App",
         details:
-          "HealthSphere is a comprehensive hospital management platform designed to streamline and optimize healthcare operations. Built using a modern MERN stack with MySQL, the platform ensures efficient management of patient records, appointments, billing, and inventory while integrating Redis for caching and Docker for containerized deployment.",
-        Techs: [FaHtml5, FaReact, RiTailwindCssFill, SiMysql],
+          "FitFlow is a mobile fitness tracking application built with Flutter and Firebase. It helps users monitor their workouts, track progress, and set fitness goals. The app features real-time data syncing, workout reminders, and performance analytics, making it a comprehensive tool for fitness enthusiasts.",
+        Techs: [FaFlutter, IoLogoFirebase],
         Code: "",
         link: "",
-        video: "/video/webIntro.mp4"
+        video: "/video/commingSoon.mp4"
       },
       {
         id: 402,
-        img: "https://www.freepnglogos.com/uploads/logo-3d-png/3d-company-logos-design-logo-online-2.png",
+        img: "",
         name: "Ledgerly",
         title: "Expence Tracker App",
         details:
-          "HealthSphere is a comprehensive hospital management platform designed to streamline and optimize healthcare operations. Built using a modern MERN stack with MySQL, the platform ensures efficient management of patient records, appointments, billing, and inventory while integrating Redis for caching and Docker for containerized deployment.",
-        Techs: [FaHtml5, FaReact, RiTailwindCssFill, SiMysql],
+          "Ledgerly is a mobile expense tracking application developed with React Native and Kotlin. It allows users to manage their daily expenses, set budgets, and analyze financial trends. The app features real-time data synchronization, intuitive UI, and secure cloud storage for expense data.",
+        Techs: [TbBrandReactNative , SiKotlin],
         Code: "",
         link: "",
-        video: "/video/webIntro.mp4"
+        video: "/video/commingSoon.mp4"
       },
     ],
   },
@@ -117,27 +150,27 @@ const ProjectTypes = [
     projects: [
       {
         id: 501,
-        img: "https://th.bing.com/th/id/OIP.J1VVS2X-BrpRZFWhnt_RzQHaHa?rs=1&pid=ImgDetMain",
+        img: "",
         name: "SOMI Bot",
         title: "ChatBot For Hospital Management System",
         details:
-          "HealthSphere is a comprehensive hospital management platform designed to streamline and optimize healthcare operations. Built using a modern MERN stack with MySQL, the platform ensures efficient management of patient records, appointments, billing, and inventory while integrating Redis for caching and Docker for containerized deployment.",
-        Techs: [FaHtml5, FaReact, RiTailwindCssFill, SiMysql],
+          "SOMI Bot is an AI-powered chatbot developed with TensorFlow and Flask to assist hospital staff and patients. It provides automated responses for appointment scheduling, doctor availability, and general inquiries, enhancing hospital efficiency and patient engagement.",
+        Techs: [FaPython, SiTensorflow, FaFlask],
         Code: "",
         link: "",
-        video: "/video/webIntro.mp4"
+        video: "/video/commingSoon.mp4"
       },
       {
         id: 502,
-        img: "https://www.freepnglogos.com/uploads/logo-3d-png/3d-company-logos-design-logo-online-2.png",
+        img: "",
         name: "E-Mentor Bot",
         title: "ChatBot For Learning Management System",
         details:
-          "HealthSphere is a comprehensive hospital management platform designed to streamline and optimize healthcare operations. Built using a modern MERN stack with MySQL, the platform ensures efficient management of patient records, appointments, billing, and inventory while integrating Redis for caching and Docker for containerized deployment.",
-        Techs: [FaHtml5, FaReact, RiTailwindCssFill, SiMysql],
+          "E-Mentor Bot is an AI-powered chatbot designed to assist students and educators within an LMS environment. Developed using TensorFlow and Django, it offers real-time support, automated responses to academic queries, and personalized learning assistance.",
+        Techs: [FaPython, SiTensorflow, SiDjango],
         Code: "",
         link: "",
-        video: "/video/webIntro.mp4"
+        video: "/video/commingSoon.mp4"
       },
     ],
   },
@@ -148,27 +181,27 @@ const ProjectTypes = [
     projects: [
       {
         id: 301,
-        img: "https://th.bing.com/th/id/OIP.J1VVS2X-BrpRZFWhnt_RzQHaHa?rs=1&pid=ImgDetMain",
+        img: "",
         name: "SmartNest",
         title: "Smart Home Automation System",
         details:
-          "HealthSphere is a comprehensive hospital management platform designed to streamline and optimize healthcare operations. Built using a modern MERN stack with MySQL, the platform ensures efficient management of patient records, appointments, billing, and inventory while integrating Redis for caching and Docker for containerized deployment.",
-        Techs: [FaHtml5, FaReact, RiTailwindCssFill, SiMysql],
+          "SmartNest is an IoT-based home automation system that enables remote control of household appliances via a mobile app. Built with Arduino, it integrates smart sensors to provide energy efficiency, security, and convenience for homeowners.",
+        Techs: [SiArduino],
         Code: "",
         link: "",
-        video: "/video/webIntro.mp4"
+        video: "/video/commingSoon.mp4"
       },
       {
         id: 302,
-        img: "https://www.freepnglogos.com/uploads/logo-3d-png/3d-company-logos-design-logo-online-2.png",
+        img: "",
         name: "EcoFarm",
         title: "Smart Agriculture System",
         details:
-          "HealthSphere is a comprehensive hospital management platform designed to streamline and optimize healthcare operations. Built using a modern MERN stack with MySQL, the platform ensures efficient management of patient records, appointments, billing, and inventory while integrating Redis for caching and Docker for containerized deployment.",
-        Techs: [FaHtml5, FaReact, RiTailwindCssFill, SiMysql],
+          "coFarm is an innovative smart agriculture system designed to optimize farming practices using IoT and automation. Built with Arduino, the system integrates smart sensors for soil moisture, temperature, and humidity monitoring. The platform helps farmers make data-driven decisions, improve crop yields, and reduce water usage, enhancing both productivity and sustainability in agriculture.",
+        Techs: [SiArduino],
         Code: "",
         link: "",
-        video: "/video/webIntro.mp4"
+        video: "/video/commingSoon.mp4"
       },
     ],
   },
@@ -325,7 +358,7 @@ function Projects() {
                           animate={{ opacity: 1, y: 0 }}
                           transition={{ duration: 1, delay: 4.5 }}
                         >
-                          <img src={selectedProject.img} alt='logo' className='w-12 h-12'/>
+                          <img src={selectedProject.img} alt='logo' className='w-12 h-12 bg-white rounded-lg'/>
                           <p className='mt text-2xl font-bold mt-4 text-start'>{selectedProject.name} - {selectedProject.title}</p>
                         </motion.div>
                         <motion.div
@@ -356,6 +389,7 @@ function Projects() {
                         <div className='flex space-x-5'>
                             <motion.a
                                 href={selectedProject.Code}
+                                target='blank'
                                 className="px-5 py-3 bg-myYellow text-black font-bold rounded-lg mt-5 border border-myYellow hover-transparent hover:text-white hover:bg-transparent hover:border-white"
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
@@ -365,6 +399,7 @@ function Projects() {
                             </motion.a>
                             <motion.a
                                 href={selectedProject.link}
+                                target='blank'
                                 className="px-5 py-3 bg-myYellow text-black font-bold rounded-lg mt-5 border border-myYellow hover-transparent hover:text-white hover:bg-transparent hover:border-white"
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
