@@ -32,8 +32,44 @@ const ProjectTypes = [
       {
         id: 202,
         img: "https://th.bing.com/th/id/OIP.J1VVS2X-BrpRZFWhnt_RzQHaHa?rs=1&pid=ImgDetMain",
-        name: "Healthsphere",
-        title: "Hospital Management Platform",
+        name: "E-Mentor",
+        title: "Learning Management System",
+        details:
+          "HealthSphere is a comprehensive hospital management platform designed to streamline and optimize healthcare operations. Built using a modern MERN stack with MySQL, the platform ensures efficient management of patient records, appointments, billing, and inventory while integrating Redis for caching and Docker for containerized deployment.",
+        Techs: [FaHtml5, FaReact, RiTailwindCssFill, SiMysql],
+        Code: "",
+        link: "",
+        video: "/video/webIntro.mp4"
+      },
+      {
+        id: 203,
+        img: "https://th.bing.com/th/id/OIP.J1VVS2X-BrpRZFWhnt_RzQHaHa?rs=1&pid=ImgDetMain",
+        name: "Sixteen Clothing",
+        title: "MultiVendor Ecommerce Platform",
+        details:
+          "HealthSphere is a comprehensive hospital management platform designed to streamline and optimize healthcare operations. Built using a modern MERN stack with MySQL, the platform ensures efficient management of patient records, appointments, billing, and inventory while integrating Redis for caching and Docker for containerized deployment.",
+        Techs: [FaHtml5, FaReact, RiTailwindCssFill, SiMysql],
+        Code: "",
+        link: "",
+        video: "/video/webIntro.mp4"
+      },
+      {
+        id: 204,
+        img: "https://th.bing.com/th/id/OIP.J1VVS2X-BrpRZFWhnt_RzQHaHa?rs=1&pid=ImgDetMain",
+        name: "Find a Job",
+        title: "Online Job Posting Platform",
+        details:
+          "HealthSphere is a comprehensive hospital management platform designed to streamline and optimize healthcare operations. Built using a modern MERN stack with MySQL, the platform ensures efficient management of patient records, appointments, billing, and inventory while integrating Redis for caching and Docker for containerized deployment.",
+        Techs: [FaHtml5, FaReact, RiTailwindCssFill, SiMysql],
+        Code: "",
+        link: "",
+        video: "/video/webIntro.mp4"
+      },
+      {
+        id: 205,
+        img: "https://th.bing.com/th/id/OIP.J1VVS2X-BrpRZFWhnt_RzQHaHa?rs=1&pid=ImgDetMain",
+        name: "Chefza",
+        title: "Online Food Ordering Platform",
         details:
           "HealthSphere is a comprehensive hospital management platform designed to streamline and optimize healthcare operations. Built using a modern MERN stack with MySQL, the platform ensures efficient management of patient records, appointments, billing, and inventory while integrating Redis for caching and Docker for containerized deployment.",
         Techs: [FaHtml5, FaReact, RiTailwindCssFill, SiMysql],
@@ -51,8 +87,8 @@ const ProjectTypes = [
       {
         id: 401,
         img: "https://th.bing.com/th/id/OIP.J1VVS2X-BrpRZFWhnt_RzQHaHa?rs=1&pid=ImgDetMain",
-        name: "Healthsphere",
-        title: "Hospital Management Platform",
+        name: "FitFlow",
+        title: "Fitness Tracker App",
         details:
           "HealthSphere is a comprehensive hospital management platform designed to streamline and optimize healthcare operations. Built using a modern MERN stack with MySQL, the platform ensures efficient management of patient records, appointments, billing, and inventory while integrating Redis for caching and Docker for containerized deployment.",
         Techs: [FaHtml5, FaReact, RiTailwindCssFill, SiMysql],
@@ -63,8 +99,8 @@ const ProjectTypes = [
       {
         id: 402,
         img: "https://www.freepnglogos.com/uploads/logo-3d-png/3d-company-logos-design-logo-online-2.png",
-        name: "Healthsphere",
-        title: "Hospital Management Platform",
+        name: "Ledgerly",
+        title: "Expence Tracker App",
         details:
           "HealthSphere is a comprehensive hospital management platform designed to streamline and optimize healthcare operations. Built using a modern MERN stack with MySQL, the platform ensures efficient management of patient records, appointments, billing, and inventory while integrating Redis for caching and Docker for containerized deployment.",
         Techs: [FaHtml5, FaReact, RiTailwindCssFill, SiMysql],
@@ -82,8 +118,8 @@ const ProjectTypes = [
       {
         id: 501,
         img: "https://th.bing.com/th/id/OIP.J1VVS2X-BrpRZFWhnt_RzQHaHa?rs=1&pid=ImgDetMain",
-        name: "Healthsphere",
-        title: "Hospital Management Platform",
+        name: "SOMI Bot",
+        title: "ChatBot For Hospital Management System",
         details:
           "HealthSphere is a comprehensive hospital management platform designed to streamline and optimize healthcare operations. Built using a modern MERN stack with MySQL, the platform ensures efficient management of patient records, appointments, billing, and inventory while integrating Redis for caching and Docker for containerized deployment.",
         Techs: [FaHtml5, FaReact, RiTailwindCssFill, SiMysql],
@@ -94,8 +130,8 @@ const ProjectTypes = [
       {
         id: 502,
         img: "https://www.freepnglogos.com/uploads/logo-3d-png/3d-company-logos-design-logo-online-2.png",
-        name: "Healthsphere",
-        title: "Hospital Management Platform",
+        name: "E-Mentor Bot",
+        title: "ChatBot For Learning Management System",
         details:
           "HealthSphere is a comprehensive hospital management platform designed to streamline and optimize healthcare operations. Built using a modern MERN stack with MySQL, the platform ensures efficient management of patient records, appointments, billing, and inventory while integrating Redis for caching and Docker for containerized deployment.",
         Techs: [FaHtml5, FaReact, RiTailwindCssFill, SiMysql],
@@ -113,8 +149,8 @@ const ProjectTypes = [
       {
         id: 301,
         img: "https://th.bing.com/th/id/OIP.J1VVS2X-BrpRZFWhnt_RzQHaHa?rs=1&pid=ImgDetMain",
-        name: "Healthsphere",
-        title: "Hospital Management Platform",
+        name: "SmartNest",
+        title: "Smart Home Automation System",
         details:
           "HealthSphere is a comprehensive hospital management platform designed to streamline and optimize healthcare operations. Built using a modern MERN stack with MySQL, the platform ensures efficient management of patient records, appointments, billing, and inventory while integrating Redis for caching and Docker for containerized deployment.",
         Techs: [FaHtml5, FaReact, RiTailwindCssFill, SiMysql],
@@ -125,8 +161,8 @@ const ProjectTypes = [
       {
         id: 302,
         img: "https://www.freepnglogos.com/uploads/logo-3d-png/3d-company-logos-design-logo-online-2.png",
-        name: "Healthsphere",
-        title: "Hospital Management Platform",
+        name: "EcoFarm",
+        title: "Smart Agriculture System",
         details:
           "HealthSphere is a comprehensive hospital management platform designed to streamline and optimize healthcare operations. Built using a modern MERN stack with MySQL, the platform ensures efficient management of patient records, appointments, billing, and inventory while integrating Redis for caching and Docker for containerized deployment.",
         Techs: [FaHtml5, FaReact, RiTailwindCssFill, SiMysql],
@@ -240,7 +276,7 @@ function Projects() {
                                 <div
                                 key={project.id}
                                 onClick={() => setSelectedProject(project)}
-                                className={`cursor-pointer p-2 px-16 border-b ${
+                                className={`cursor-pointer p-2 px-5 w-64 border-b ${
                                     selectedProject.id === project.id
                                     ? "bg-myYellow font-bold text-black"
                                     : ""
@@ -279,7 +315,7 @@ function Projects() {
                           animate={{ opacity: 1, x: 0 }}
                           transition={{ duration: 1, delay: 4 }}
                         >
-                          <p className="font-bold text-center text-lg">{selectedProject.name}</p>
+                          <p className="font-bold text-center text-lg mb-2">{selectedProject.name}</p>
                         </motion.div>
                       </div>
                       <div className="flex flex-col justify-center items-start border-t-2 border-l-2 -mt-1 ml-6 pl-10 pt-10">
@@ -290,7 +326,7 @@ function Projects() {
                           transition={{ duration: 1, delay: 4.5 }}
                         >
                           <img src={selectedProject.img} alt='logo' className='w-12 h-12'/>
-                          <p className='mt text-2xl font-bold mt-4'>{selectedProject.name} - {selectedProject.title}</p>
+                          <p className='mt text-2xl font-bold mt-4 text-start'>{selectedProject.name} - {selectedProject.title}</p>
                         </motion.div>
                         <motion.div
                           className=""
@@ -311,7 +347,7 @@ function Projects() {
                             <p className="text-lg font-bold mt-2 mb-2 text-start">
                                 Tech Stack
                             </p>
-                            <div className="flex justify-center items-center space-x-3 ml-12 mt-3">
+                            <div className="grid grid-cols-5 gap-4 ml-12 mt-3">
                                 {selectedProject.Techs.map((Tech, index) => (
                                     <Tech key={index} className="text-myYellow text-3xl hover:text-white" />
                                 ))}
@@ -328,7 +364,7 @@ function Projects() {
                                 View the code
                             </motion.a>
                             <motion.a
-                                href={selectedProject.Code}
+                                href={selectedProject.link}
                                 className="px-5 py-3 bg-myYellow text-black font-bold rounded-lg mt-5 border border-myYellow hover-transparent hover:text-white hover:bg-transparent hover:border-white"
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}

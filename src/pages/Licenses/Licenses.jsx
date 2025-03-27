@@ -40,62 +40,71 @@ const professionalCertificates = [
     name: "FrontEnd Developer",
     descrip: "The Meta Frontend Developer Professional Certificate program is a comprehensive, hands-on learning path designed to equip learners with the essential skills and tools needed to build interactive and modern web applications. This program covers everything from foundational HTML and CSS to advanced JavaScript and React development. Students will gain practical experience through coding exercises, projects, and real-world applications while also learning best practices in version control, UI/UX principles, and performance optimization. Upon completion, learners will be prepared for entry-level frontend development roles and will have a portfolio of projects to showcase their skills.",
     image: frontCertificate,
+    verify: "",
     courses: [
       {
         "id": 201,
         "name": "Introduction to Frontend Development",
         "image": frontCourse1,
         "details": "This course introduces students to the basics of frontend development, including HTML, CSS, and JavaScript. They will learn how web browsers render pages, how to structure HTML documents properly, and how to style them using CSS. The course also covers essential development tools and provides insights into frontend career opportunities.",
-        "skills": ["HTML", "CSS", "JavaScript", "Web Development Basics"]
+        "skills": ["HTML", "CSS", "JavaScript", "Web Development Basics"],
+        "verify": "",
       },
       {
         "id": 202,
         "name": "Programming with JavaScript",
         "image": frontCourse2,
         "details": "This course is designed to give a strong foundation in JavaScript programming. Students will learn about variables, data types, functions, loops, and objects. The course also introduces ES6+ features like arrow functions, destructuring, and promises. Hands-on exercises will include DOM manipulation, event handling, and form validation.",
-        "skills": ["JavaScript", "ES6", "DOM Manipulation", "Event Handling"]
+        "skills": ["JavaScript", "ES6", "DOM Manipulation", "Event Handling"],
+        "verify": "",
       },
       {
         "id": 203,
         "name": "Version Control",
         "image": frontCourse3,
         "details": "Students will gain hands-on experience with Git and GitHub, learning essential version control concepts like commits, branching, merging, and resolving conflicts. The course also covers remote repositories, pull requests, and collaborative workflows, preparing students to work effectively in team environments.",
-        "skills": ["Git", "GitHub", "Version Control", "Collaboration"]
+        "skills": ["Git", "GitHub", "Version Control", "Collaboration"],
+        "verify": "",
       },
       {
         "id": 204,
         "name": "HTML and CSS in Depth",
         "image": frontCourse4,
         "details": "This advanced course dives deeper into modern HTML and CSS techniques. Students will explore topics such as semantic HTML, responsive design, Flexbox, CSS Grid, animations, and transitions. They will build complex, visually appealing web layouts while following accessibility and performance best practices.",
-        "skills": ["HTML5", "CSS3", "Flexbox", "CSS Grid", "Responsive Design"]
+        "skills": ["HTML5", "CSS3", "Flexbox", "CSS Grid", "Responsive Design"],
+        "verify": "",
       },
       {
         "id": 205,
         "name": "React Basics",
         "image": frontCourse5,
         "details": "An introduction to React.js, this course covers the fundamentals of building dynamic user interfaces. Students will learn about JSX, components, props, and state management. They will build small applications to understand how React simplifies UI development and improves performance.",
-        "skills": ["React", "JSX", "Components", "State Management"]
+        "skills": ["React", "JSX", "Components", "State Management"],
+        "verify": "",
       },
       {
         "id": 206,
         "name": "Advanced React",
         "image": frontCourse6,
         "details": "This course builds on React basics by introducing advanced concepts like hooks, the Context API, and state management strategies. Students will also learn about performance optimization, lazy loading, and server-side rendering techniques to build high-performance React applications.",
-        "skills": ["React Hooks", "Context API", "Performance Optimization", "Server-side Rendering"]
+        "skills": ["React Hooks", "Context API", "Performance Optimization", "Server-side Rendering"],
+        "verify": "",
       },
       {
         "id": 207,
         "name": "Principles of UX/UI Design",
         "image": frontCourse7,
         "details": "A comprehensive introduction to UX/UI design, this course covers the fundamentals of creating user-friendly and aesthetically pleasing interfaces. Topics include wireframing, usability testing, accessibility, typography, color theory, and the use of design tools like Figma or Adobe XD.",
-        "skills": ["UI/UX Design", "Wireframing", "Usability Testing", "Accessibility"]
+        "skills": ["UI/UX Design", "Wireframing", "Usability Testing", "Accessibility"],
+        "verify": "",
       },
       {
         "id": 208,
         "name": "Frontend Developer Capstone Project",
         "image": frontCourse8,
         "details": "This final course allows students to apply all the skills they have learned throughout the program by building a complete frontend application. The project will include API integration, responsive design, state management, and performance optimizations. Students will create a portfolio-worthy application demonstrating their frontend development expertise.",
-        "skills": ["Full-Stack Development", "React", "REST APIs", "Project Management"]
+        "skills": ["Full-Stack Development", "React", "REST APIs", "Project Management"],
+        "verify": "",
       }
     ],
   },
@@ -105,69 +114,79 @@ const professionalCertificates = [
     name: "Backend Developer",
     descrip: "The Meta Backend Developer Professional Certificate is designed for learners who want to master backend development using modern tools and frameworks. This program covers essential backend technologies such as Python, Node.js, and Express.js, while also focusing on database management, authentication, and API development. Learners will gain hands-on experience building secure and scalable backend systems and integrating them with frontend applications. By the end of the course, students will have built real-world projects to showcase their expertise in backend development.",
     image: backCertificate,
+    verify: "",
     courses: [
       {
         "id": 301,
         "name": "Introduction to Backend Development",
         "image": backCourse1,
         "details": "This course introduces students to the fundamentals of backend development. Topics include how web servers process requests, HTTP protocols, database interactions, and how backend applications integrate with frontend systems. Students will also explore different backend technologies and frameworks used in the industry.",
-        "skills": ["Backend Fundamentals", "HTTP Requests", "Web Servers"]
+        "skills": ["Backend Fundamentals", "HTTP Requests", "Web Servers"],
+        "verify": "",
       },
       {
         "id": 302,
         "name": "Programming with Python",
         "image": backCourse2,
         "details": "A comprehensive introduction to Python programming. Students will learn about variables, data structures, functions, object-oriented programming (OOP), and working with Python libraries. The course also introduces Flask and Django for backend web development, covering routing, templating, and database integration.",
-        "skills": ["Python", "Flask", "Django", "OOP"]
+        "skills": ["Python", "Flask", "Django", "OOP"],
+        "verify": "",
       },
       {
         "id": 303,
         "name": "Version Control",
         "image": backCourse3,
         "details": "This course covers the fundamentals of Git and version control. Students will learn about repository management, branching, merging, resolving conflicts, and working with remote repositories on GitHub. The course also covers best practices for collaborative development and open-source contributions.",
-        "skills": ["Git", "GitHub", "Version Control", "Collaboration"]
+        "skills": ["Git", "GitHub", "Version Control", "Collaboration"],
+        "verify": "",
       },
       {
         "id": 304,
         "name": "Introduction to Databases for Back-End Development",
         "image": backCourse4,
         "details": "Students will learn about relational databases and SQL, including how to design schemas, write queries, and optimize database performance. Topics covered include indexing, transactions, and database normalization. The course will also introduce NoSQL databases and their use cases.",
-        "skills": ["SQL", "PostgreSQL", "MySQL", "Database Management"]
+        "skills": ["SQL", "PostgreSQL", "MySQL", "Database Management"],
+        "verify": "",
       },
       {
         "id": 305,
         "name": "Django Web Framework",
         "image": backCourse5,
         "details": "A deep dive into Django, one of the most popular Python web frameworks. Students will learn how to build full-stack web applications using Django’s built-in ORM, authentication system, and admin panel. Topics include REST API development, authentication, middleware, and deploying Django applications.",
-        "skills": ["Django", "ORM", "Authentication", "Web Development"]
+        "skills": ["Django", "ORM", "Authentication", "Web Development"],
+        "verify": "",
       },
       {
         "id": 306,
         "name": "APIs",
         "image": backCourse6,
         "details": "This course focuses on designing and building APIs using REST and GraphQL. Students will learn about request handling, authentication mechanisms such as OAuth and JWT, API rate limiting, and best practices for API documentation and security.",
-        "skills": ["REST APIs", "GraphQL", "Authentication", "Security"]
+        "skills": ["REST APIs", "GraphQL", "Authentication", "Security"],
+        "verify": "",
       },
       {
         "id": 307,
         "name": "The Full Stack",
         "image": backCourse7,
         "details": "A comprehensive course that integrates frontend and backend development. Students will build a full-stack application using technologies like React, Node.js, Express, and MongoDB. The course covers API development, database integration, authentication, and deployment.",
-        "skills": ["Full-Stack Development", "React", "Node.js", "Database Integration"]
+        "skills": ["Full-Stack Development", "React", "Node.js", "Database Integration"],
+        "verify": "",
       },
       {
         "id": 308,
         "name": "Back-End Developer Capstone",
         "image": backCourse8,
         "details": "A final project-based course where students apply their backend development skills to build a scalable and secure application. They will work with databases, authentication, and API development while following best practices for performance optimization and security.",
-        "skills": ["Backend Development", "API Development", "Database Management", "Security"]
+        "skills": ["Backend Development", "API Development", "Database Management", "Security"],
+        "verify": "",
       },
       {
         "id": 309,
         "name": "Coding Interview Preparation",
         "image": backCourse8,
         "details": "This course prepares students for technical interviews by covering common data structures, algorithms, and problem-solving techniques. Topics include arrays, linked lists, trees, recursion, dynamic programming, and system design. Students will practice coding challenges and mock interviews.",
-        "skills": ["Data Structures", "Algorithms", "Problem-Solving", "System Design"]
+        "skills": ["Data Structures", "Algorithms", "Problem-Solving", "System Design"],
+        "verify": "",
       }
     ],
   },
@@ -177,69 +196,79 @@ const professionalCertificates = [
     name: "Database Engineer",
     descrip: "The Meta Database Engineer Professional Certificate is a specialized program designed for learners interested in database administration, optimization, and engineering. This course covers SQL, NoSQL databases, indexing, transactions, and data security. Students will learn how to design efficient data models, optimize queries, and manage large-scale data systems used in real-world applications. The program also introduces cloud database solutions and data migration techniques, preparing learners for roles such as database administrator, data engineer, or backend developer.",
     image: dbCertificate,
+    verify: "",
     courses: [
       {
         "id": 401,
         "name": "Introduction to Databases",
         "image": dbCourse1,
         "details": "An introductory course covering database fundamentals, relational vs. NoSQL databases, data modeling, and the importance of database management in modern applications.",
-        "skills": ["Database Fundamentals", "Relational Databases", "NoSQL"]
+        "skills": ["Database Fundamentals", "Relational Databases", "NoSQL"],
+        "verify": "",
       },
       {
         "id": 402,
         "name": "Version Control",
         "image": dbCourse2,
         "details": "This course provides an in-depth understanding of Git, GitHub, branching strategies, version history, merging conflicts, and collaborative development workflows.",
-        "skills": ["Git", "GitHub", "Branching", "Collaboration"]
+        "skills": ["Git", "GitHub", "Branching", "Collaboration"],
+        "verify": "",
       },
       {
         "id": 403,
         "name": "Database Structures and Management with MySQL",
         "image": dbCourse3,
         "details": "A hands-on course on MySQL, covering database design, schema creation, indexing, normalization, and performance tuning for efficient database management.",
-        "skills": ["MySQL", "Schema Design", "Indexing", "Database Management"]
+        "skills": ["MySQL", "Schema Design", "Indexing", "Database Management"],
+        "verify": "",
       },
       {
         "id": 404,
         "name": "Advanced MySQL Topics",
         "image": dbCourse4,
         "details": "This course explores advanced MySQL features such as stored procedures, triggers, partitioning, replication, and high-performance optimization techniques.",
-        "skills": ["Stored Procedures", "Triggers", "Replication", "Performance Optimization"]
+        "skills": ["Stored Procedures", "Triggers", "Replication", "Performance Optimization"],
+        "verify": "",
       },
       {
         "id": 405,
         "name": "Programming in Python",
         "image": dbCourse5,
         "details": "A comprehensive introduction to Python programming, covering syntax, data structures, OOP, file handling, and database interaction using MySQL and SQLite.",
-        "skills": ["Python", "OOP", "Data Structures", "Database Interaction"]
+        "skills": ["Python", "OOP", "Data Structures", "Database Interaction"],
+        "verify": "",
       },
       {
         "id": 406,
         "name": "Database Clients",
         "image": dbCourse6,
         "details": "This course introduces popular database client tools such as MySQL Workbench, pgAdmin, MongoDB Compass, and DBeaver for efficient database management.",
-        "skills": ["Database Clients", "MySQL Workbench", "pgAdmin", "DBeaver"]
+        "skills": ["Database Clients", "MySQL Workbench", "pgAdmin", "DBeaver"],
+        "verify": "",
       },
       {
         "id": 407,
         "name": "Advanced Data Modeling",
         "image": dbCourse7,
         "details": "Students will learn advanced data modeling techniques, including entity-relationship modeling, normalization, denormalization, and designing scalable database schemas.",
-        "skills": ["Data Modeling", "Normalization", "Denormalization", "Schema Design"]
+        "skills": ["Data Modeling", "Normalization", "Denormalization", "Schema Design"],
+        "verify": "",
       },
       {
         "id": 408,
         "name": "Database Engineer Capstone Project",
         "image": dbCourse8,
         "details": "A final hands-on project where students design, develop, and deploy a scalable database solution for a real-world application, integrating SQL and NoSQL databases.",
-        "skills": ["Database Architecture", "Data Modeling", "SQL & NoSQL Integration"]
+        "skills": ["Database Architecture", "Data Modeling", "SQL & NoSQL Integration"],
+        "verify": "",
       },
       {
         "id": 409,
         "name": "Coding Interview Preparation",
         "image": dbCourse9,
         "details": "Prepares students for technical interviews with database-related coding challenges, including SQL queries, data structures, system design, and problem-solving strategies.",
-        "skills": ["SQL Queries", "Data Structures", "System Design", "Problem-Solving"]
+        "skills": ["SQL Queries", "Data Structures", "System Design", "Problem-Solving"],
+        "verify": "",
       }
     ],
   },
@@ -340,8 +369,17 @@ function Licenses() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1 , delay: 2.5}}
                 >
-                  <p className='text-sm mt-4 mb-16'>{selectedCertificate.descrip}</p>
+                  <p className='text-sm mt-4 mb-4'>{selectedCertificate.descrip}</p>
                 </motion.div>
+                <motion.a 
+                  href=''
+                  className="bg-myYellow border border-myYellow px-10 py-3 text-black font-bold rounded-lg mb-16 hover:border-white hover:bg-transparent hover:text-white"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1 , delay: 3}}
+                >
+                  Verify
+                </motion.a>
               </div>
             </motion.div>
             <div className='flex flex-col md:flex-row justify-center items-center lg:w-3/4 mt-32'>
@@ -406,6 +444,15 @@ function Licenses() {
                       >
                         <p className='text-sm mt-4 mb-16 '>{selectedCourse.details}</p>
                       </motion.div>
+                      <motion.a 
+                        href=''
+                        className="bg-myYellow border border-myYellow px-10 py-3 text-black font-bold rounded-lg mb-16 hover:border-white hover:bg-transparent hover:text-white"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1 , delay: 5.5}}
+                      >
+                        Verify
+                      </motion.a>
                     </div>
                   </motion.div>
                   <motion.div

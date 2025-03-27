@@ -31,7 +31,7 @@ const AnimatedIcon = ({ link, platform, delay }) => {
       transition={{ duration: 1, ease: "easeInOut", delay }}
     >
       <a href={link} target="_blank" rel="noopener noreferrer">
-        <Icon className="text-xl md:text-3xl text-white" />
+        <Icon className="text-xl md:text-3xl text-white hover:text-myYellow" />
       </a>
     </motion.div>
   );
