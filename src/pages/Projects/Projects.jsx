@@ -1,15 +1,15 @@
 import React, { Suspense, useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion'
-import { TbWorldWww } from 'react-icons/tb';
-import { FaBrain, FaHtml5, FaReact } from 'react-icons/fa';
-import { RiTailwindCssFill } from 'react-icons/ri';
-import { SiMysql } from 'react-icons/si';
-import frontCourse1 from '../../assets/images/certificates/meta-frontend/course1.png';
+import { TbBrandLaravel, TbBrandThreejs, TbWorldWww } from 'react-icons/tb';
+import { FaBrain, FaDocker, FaHtml5, FaNodeJs, FaReact } from 'react-icons/fa';
+import { RiNextjsFill, RiTailwindCssFill } from 'react-icons/ri';
+import { SiExpress, SiMysql } from 'react-icons/si';
 import { Canvas } from '@react-three/fiber';
 import { Environment, Html, OrbitControls, PerspectiveCamera } from '@react-three/drei';
 import { Laptop } from '../../component/3d_component/Laptop';
 import { FaMobileScreen } from 'react-icons/fa6';
 import { BsRobot } from 'react-icons/bs';
+import { DiRedis } from 'react-icons/di';
 
 const ProjectTypes = [
   {
@@ -24,8 +24,8 @@ const ProjectTypes = [
         title: "Hospital Management Platform",
         details:
           "HealthSphere is a comprehensive hospital management platform designed to streamline and optimize healthcare operations. Built using a modern MERN stack with MySQL, the platform ensures efficient management of patient records, appointments, billing, and inventory while integrating Redis for caching and Docker for containerized deployment.",
-        Techs: [FaHtml5, FaReact, RiTailwindCssFill, SiMysql],
-        Code: "",
+        Techs: [FaReact, RiTailwindCssFill, SiMysql , FaNodeJs , SiExpress , DiRedis , FaDocker ],
+        Code: "https://github.com/thathsarabandara/HealthSphereProject-",
         link: "",
         video: "/video/commingSoon.mp4"
       },
@@ -36,10 +36,10 @@ const ProjectTypes = [
         title: "Learning Management System",
         details:
           "HealthSphere is a comprehensive hospital management platform designed to streamline and optimize healthcare operations. Built using a modern MERN stack with MySQL, the platform ensures efficient management of patient records, appointments, billing, and inventory while integrating Redis for caching and Docker for containerized deployment.",
-        Techs: [FaHtml5, FaReact, RiTailwindCssFill, SiMysql],
-        Code: "",
+        Techs: [FaReact, RiTailwindCssFill, SiMysql , RiNextjsFill , FaDocker , DiRedis ],
+        Code: "https://github.com/thathsarabandara/E-Mentor-frontend",
         link: "",
-        video: "/video/webIntro.mp4"
+        video: "/video/commingSoon.mp4"
       },
       {
         id: 203,
@@ -48,10 +48,10 @@ const ProjectTypes = [
         title: "MultiVendor Ecommerce Platform",
         details:
           "HealthSphere is a comprehensive hospital management platform designed to streamline and optimize healthcare operations. Built using a modern MERN stack with MySQL, the platform ensures efficient management of patient records, appointments, billing, and inventory while integrating Redis for caching and Docker for containerized deployment.",
-        Techs: [FaHtml5, FaReact, RiTailwindCssFill, SiMysql],
-        Code: "",
+        Techs: [ TbBrandLaravel, RiTailwindCssFill, SiMysql , DiRedis , FaDocker],
+        Code: "https://github.com/RasuwanK/ecommerce-app",
         link: "",
-        video: "/video/webIntro.mp4"
+        video: "/video/commingSoon.mp4"
       },
       {
         id: 204,
@@ -61,9 +61,9 @@ const ProjectTypes = [
         details:
           "HealthSphere is a comprehensive hospital management platform designed to streamline and optimize healthcare operations. Built using a modern MERN stack with MySQL, the platform ensures efficient management of patient records, appointments, billing, and inventory while integrating Redis for caching and Docker for containerized deployment.",
         Techs: [FaHtml5, FaReact, RiTailwindCssFill, SiMysql],
-        Code: "",
+        Code: "https://github.com/thathsarabandara/findajob",
         link: "",
-        video: "/video/webIntro.mp4"
+        video: "/video/commingSoon.mp4"
       },
       {
         id: 205,
@@ -75,7 +75,31 @@ const ProjectTypes = [
         Techs: [FaHtml5, FaReact, RiTailwindCssFill, SiMysql],
         Code: "",
         link: "",
-        video: "/video/webIntro.mp4"
+        video: "/video/commingSoon.mp4"
+      },
+      {
+        id: 206,
+        img: "https://th.bing.com/th/id/OIP.J1VVS2X-BrpRZFWhnt_RzQHaHa?rs=1&pid=ImgDetMain",
+        name: "Bigcart",
+        title: "E-commerce Platform",
+        details:
+          "HealthSphere is a comprehensive hospital management platform designed to streamline and optimize healthcare operations. Built using a modern MERN stack with MySQL, the platform ensures efficient management of patient records, appointments, billing, and inventory while integrating Redis for caching and Docker for containerized deployment.",
+        Techs: [FaHtml5, FaReact, RiTailwindCssFill, SiMysql],
+        Code: "",
+        link: "",
+        video: "/video/commingSoon.mp4"
+      },
+      {
+        id: 207,
+        img: "https://th.bing.com/th/id/OIP.J1VVS2X-BrpRZFWhnt_RzQHaHa?rs=1&pid=ImgDetMain",
+        name: "Strom's Portfolio",
+        title: "My-Portfolio",
+        details:
+          "HealthSphere is a comprehensive hospital management platform designed to streamline and optimize healthcare operations. Built using a modern MERN stack with MySQL, the platform ensures efficient management of patient records, appointments, billing, and inventory while integrating Redis for caching and Docker for containerized deployment.",
+        Techs: [FaReact, RiTailwindCssFill,TbBrandThreejs ],
+        Code: "https://github.com/thathsarabandara/portfolio-v1",
+        link: "",
+        video: "/video/commingSoon.mp4"
       },
     ],
   },
@@ -94,7 +118,7 @@ const ProjectTypes = [
         Techs: [FaHtml5, FaReact, RiTailwindCssFill, SiMysql],
         Code: "",
         link: "",
-        video: "/video/webIntro.mp4"
+        video: "/video/commingSoon.mp4"
       },
       {
         id: 402,
@@ -106,7 +130,7 @@ const ProjectTypes = [
         Techs: [FaHtml5, FaReact, RiTailwindCssFill, SiMysql],
         Code: "",
         link: "",
-        video: "/video/webIntro.mp4"
+        video: "/video/commingSoon.mp4"
       },
     ],
   },
@@ -125,7 +149,7 @@ const ProjectTypes = [
         Techs: [FaHtml5, FaReact, RiTailwindCssFill, SiMysql],
         Code: "",
         link: "",
-        video: "/video/webIntro.mp4"
+        video: "/video/commingSoon.mp4"
       },
       {
         id: 502,
@@ -137,7 +161,7 @@ const ProjectTypes = [
         Techs: [FaHtml5, FaReact, RiTailwindCssFill, SiMysql],
         Code: "",
         link: "",
-        video: "/video/webIntro.mp4"
+        video: "/video/commingSoon.mp4"
       },
     ],
   },
@@ -156,7 +180,7 @@ const ProjectTypes = [
         Techs: [FaHtml5, FaReact, RiTailwindCssFill, SiMysql],
         Code: "",
         link: "",
-        video: "/video/webIntro.mp4"
+        video: "/video/commingSoon.mp4"
       },
       {
         id: 302,
@@ -168,7 +192,7 @@ const ProjectTypes = [
         Techs: [FaHtml5, FaReact, RiTailwindCssFill, SiMysql],
         Code: "",
         link: "",
-        video: "/video/webIntro.mp4"
+        video: "/video/commingSoon.mp4"
       },
     ],
   },
@@ -356,6 +380,7 @@ function Projects() {
                         <div className='flex space-x-5'>
                             <motion.a
                                 href={selectedProject.Code}
+                                target='blank'
                                 className="px-5 py-3 bg-myYellow text-black font-bold rounded-lg mt-5 border border-myYellow hover-transparent hover:text-white hover:bg-transparent hover:border-white"
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
@@ -365,6 +390,7 @@ function Projects() {
                             </motion.a>
                             <motion.a
                                 href={selectedProject.link}
+                                target='blank'
                                 className="px-5 py-3 bg-myYellow text-black font-bold rounded-lg mt-5 border border-myYellow hover-transparent hover:text-white hover:bg-transparent hover:border-white"
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}

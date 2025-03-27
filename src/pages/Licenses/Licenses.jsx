@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState ,useRef } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import Hologram from '../../component/Hologram/Hologram';
 import frontCertificate from '../../assets/images/certificates/meta-frontend/certificate.png'
@@ -85,6 +85,7 @@ import dcaCertificate from '../../assets/images/certificates/ibm-dca-foundation/
 import dcaCourse1 from '../../assets/images/certificates/ibm-dca-foundation/course1.png';
 import dcaCourse2 from '../../assets/images/certificates/ibm-dca-foundation/course2.png';
 import dcaCourse3 from '../../assets/images/certificates/ibm-dca-foundation/course3.png';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 const professionalCertificates = [
   {
@@ -802,6 +803,14 @@ const professionalCertificates = [
 function Licenses() {
   const [selectedCertificate, setSelectedCertificate] = useState(professionalCertificates[0]);
   const [selectedCourse, setSelectedCourse] = useState(selectedCertificate.courses[0]);
+  const scrollRef = useRef(null);
+
+  const scroll = (direction) => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollBy({ left: direction === "left" ? -400 : 400, behavior: "smooth" });
+    }
+  };
+
 
   return (
     <div className="relative w-full min-h-screen text-white font-chakra p-8 flex flex-col items-center ">
@@ -822,33 +831,49 @@ function Licenses() {
       </motion.div>
 
       <div className="relative w-full h-full max-w-8xl mt-3 flex flex-col justify-center items-start">
-        <div className="p-6 w-full max-w-7xl mx-auto">
-          {/* Horizontal Selection Bar */}
-          <motion.div 
-            className="overflow-x-auto whitespace-nowrap flex space-x-4 pb-4 border-b-2 "
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
-          >
-            {professionalCertificates.map((cert,index) => (
-              <motion.div
-                key={cert.id}
-                initial={{ opacity: 0, y: -50 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 , delay: index * 0.6 }}
-                onClick={() => {
-                  setSelectedCertificate(cert);
-                  setSelectedCourse(cert.courses[0]);
-                }}
-                className='cursor-pointer w-72 h-84'
-                whileHover={{ scale: 1.05 }}
-              >
-                <Hologram imageUrl={cert.image} />
-                <p className="text-sm text-center w-56">{cert.name}</p>
-                <p className="text-sm text-center font-bold">{cert.institute}</p>
-              </motion.div>
-            ))}
+        <div className="p-6 flex flex-col justify-center items-center w-full max-w-7xl mx-auto">
+          <div className="relative w-11/12">
+            <button 
+              onClick={() => scroll("left")} 
+              className="absolute -left-16 top-1/2 transform -translate-y-1/2 p-2 rounded-full shadow-md z-10"
+            >
+              <FaChevronLeft className='text-4xl text-white hover:text-myYellow' />
+            </button>
+
+            <motion.div 
+              ref={scrollRef}
+              className="overflow-x-auto whitespace-nowrap flex space-x-4 pb-4 border-b-2 scrollbar-hide scroll-smooth"
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1 }}
+            >
+              {professionalCertificates.map((cert, index) => (
+                <motion.div
+                  key={cert.id}
+                  initial={{ opacity: 0, y: -50 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.6 }}
+                  onClick={() => {
+                    setSelectedCertificate(cert);
+                    setSelectedCourse(cert.courses[0]);
+                  }}
+                  className="cursor-pointer w-72 h-84"
+                  whileHover={{ scale: 1.05 }}
+                >
+                  <Hologram imageUrl={cert.image} />
+                  <p className="text-sm text-center w-56">{cert.name}</p>
+                  <p className="text-sm text-center font-bold">{cert.institute}</p>
+                </motion.div>
+              ))}
             </motion.div>
+
+            <button 
+              onClick={() => scroll("right")} 
+              className="absolute -right-16 top-1/2 transform -translate-y-1/2 p-2 rounded-full shadow-md z-10"
+            >
+              <FaChevronRight className='text-4xl text-white hover:text-myYellow'/>
+            </button>
+          </div>
         <AnimatePresence mode='wait'>
           <motion.div
                 key={selectedCertificate.id} 
