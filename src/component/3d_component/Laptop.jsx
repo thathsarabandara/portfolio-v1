@@ -19,13 +19,13 @@ export function Laptop({ videoSrc, ...props }) {
   useEffect(() => {
     actions[names[0]]
       .reset()
-      .fadeIn(0.5)
+      .fadeIn(0.7)
       .play();
     const timeout = setTimeout(() => {
       actions[names[0]].paused = true;
     }, 5000);
       return () => clearTimeout(timeout);
-    }, [actions, names]);
+    }, [actions, names, videoSrc]);
 
   return (
     <group ref={group} {...props} dispose={null}>

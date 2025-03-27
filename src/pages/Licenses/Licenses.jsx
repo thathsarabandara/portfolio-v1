@@ -65,6 +65,26 @@ import aiDevolopCourse7 from '../../assets/images/certificates/ibm-aiDeveloper/c
 import aiDevolopCourse8 from '../../assets/images/certificates/ibm-aiDeveloper/course8.png';
 import aiDevolopCourse9 from '../../assets/images/certificates/ibm-aiDeveloper/course9.png';
 import aiDevolopCourse10 from '../../assets/images/certificates/ibm-aiDeveloper/course10.png';
+import fullStackCertificate from '../../assets/images/certificates/ibm-fullstack/certificate.png';
+import fullStackCourse1 from '../../assets/images/certificates/ibm-fullstack/course1.png';
+import fullStackCourse2 from '../../assets/images/certificates/ibm-fullstack/course2.png';
+import fullStackCourse3 from '../../assets/images/certificates/ibm-fullstack/course3.png';
+import fullStackCourse4 from '../../assets/images/certificates/ibm-fullstack/course4.png';
+import fullStackCourse5 from '../../assets/images/certificates/ibm-fullstack/course5.png';
+import fullStackCourse6 from '../../assets/images/certificates/ibm-fullstack/course6.png';
+import fullStackCourse7 from '../../assets/images/certificates/ibm-fullstack/course7.png';
+import fullStackCourse8 from '../../assets/images/certificates/ibm-fullstack/course8.png';
+import fullStackCourse9 from '../../assets/images/certificates/ibm-fullstack/course9.png';
+import fullStackCourse10 from '../../assets/images/certificates/ibm-fullstack/course10.png';
+import fullStackCourse11 from '../../assets/images/certificates/ibm-fullstack/course11.png';
+import fullStackCourse12 from '../../assets/images/certificates/ibm-fullstack/course12.png';
+import fullStackCourse13 from '../../assets/images/certificates/ibm-fullstack/course13.png';
+import fullStackCourse14 from '../../assets/images/certificates/ibm-fullstack/course14.png';
+import fullStackCourse15 from '../../assets/images/certificates/ibm-fullstack/course15.png';
+import dcaCertificate from '../../assets/images/certificates/ibm-dca-foundation/certificate.png';
+import dcaCourse1 from '../../assets/images/certificates/ibm-dca-foundation/course1.png';
+import dcaCourse2 from '../../assets/images/certificates/ibm-dca-foundation/course2.png';
+import dcaCourse3 from '../../assets/images/certificates/ibm-dca-foundation/course3.png';
 
 const professionalCertificates = [
   {
@@ -617,132 +637,165 @@ const professionalCertificates = [
     "institute": "IBM",
     "name": "IBM Full Stack Software Developer",
     "descrip": "The IBM Full Stack Software Developer program equips learners with essential skills for developing Cloud Native Applications. The program covers front-end technologies like HTML, CSS, JavaScript, React, and Bootstrap, as well as back-end technologies like Node.js, Express, Python, and Django. Learners will also work with cloud technologies such as Containers, Kubernetes, Microservices, and Serverless Functions. The program culminates with hands-on projects, including a capstone, to showcase skills in real-world applications.",
-    "image": "frontCertificate",
-    "verify": "https://coursera.org/verify/professional-cert/LPNIZ6X525B0",
+    "image": fullStackCertificate,
+    "verify": "https://coursera.org/verify/professional-cert/KN4ZW9PPCIAW",
     "courses": [
       {
         "id": 1001,
         "name": "Introduction to Software Engineering",
-        "image": "frontCourse1",
+        "image": fullStackCourse1,
         "details": "This course covers the fundamentals of software engineering, including software development methodologies, design patterns, and application architecture.",
         "skills": ["Software Engineering", "Development Methodologies", "Design Patterns"],
-        "verify": "https://coursera.org/verify/LPNIZ6X525B0"
+        "verify": "https://coursera.org/verify/AUSU48XGV2XM"
       },
       {
         "id": 1002,
         "name": "Introduction to Cloud Computing",
-        "image": "frontCourse2",
+        "image": fullStackCourse2,
         "details": "This course introduces the basics of cloud computing, covering cloud infrastructure, services, and deployment models.",
         "skills": ["Cloud Computing", "Cloud Infrastructure", "Cloud Services"],
-        "verify": "https://coursera.org/verify/LPNIZ6X525B0"
+        "verify": "https://coursera.org/verify/GJSCYE4989LF"
       },
       {
         "id": 1003,
         "name": "Introduction to HTML, CSS, & JavaScript",
-        "image": "frontCourse3",
+        "image": fullStackCourse3,
         "details": "Learn the basics of front-end web development with HTML, CSS, and JavaScript, and how to structure and style web pages.",
         "skills": ["HTML", "CSS", "JavaScript"],
-        "verify": "https://coursera.org/verify/LPNIZ6X525B0"
+        "verify": "https://coursera.org/verify/UST0RWOWMNM2"
       },
       {
         "id": 1004,
         "name": "Getting Started with Git and GitHub",
-        "image": "frontCourse4",
+        "image": fullStackCourse4,
         "details": "Learn how to use Git for version control and GitHub for collaboration, including commits, branches, and pull requests.",
         "skills": ["Git", "GitHub", "Version Control", "Collaboration"],
-        "verify": "https://coursera.org/verify/LPNIZ6X525B0"
+        "verify": "https://coursera.org/verify/BSPQPJFSGJLL"
       },
       {
         "id": 1005,
         "name": "Developing Front-End Apps with React",
-        "image": "frontCourse5",
+        "image": fullStackCourse5,
         "details": "Learn to build dynamic user interfaces with React, including components, JSX, state management, and event handling.",
         "skills": ["React", "JSX", "State Management", "Event Handling"],
-        "verify": "https://coursera.org/verify/LPNIZ6X525B0"
+        "verify": "https://coursera.org/verify/2LLFVQDAD12Y"
       },
       {
         "id": 1006,
         "name": "Developing Back-End Apps with Node.js and Express",
-        "image": "frontCourse6",
+        "image": fullStackCourse6,
         "details": "This course covers back-end development using Node.js and Express, including building APIs, working with databases, and handling HTTP requests.",
         "skills": ["Node.js", "Express", "APIs", "Backend Development"],
-        "verify": "https://coursera.org/verify/LPNIZ6X525B0"
+        "verify": "https://coursera.org/verify/Y60R2P1IPJVM"
       },
       {
         "id": 1007,
         "name": "Python for Data Science, AI & Development",
-        "image": "frontCourse7",
+        "image": fullStackCourse7,
         "details": "Learn Python programming for data science and AI development, including working with libraries like Pandas, NumPy, and Matplotlib.",
         "skills": ["Python", "Data Science", "AI", "Libraries (Pandas, NumPy)"],
-        "verify": "https://coursera.org/verify/LPNIZ6X525B0"
+        "verify": "https://coursera.org/verify/IZZZW01AJHYP"
       },
       {
         "id": 1008,
         "name": "Developing AI Applications with Python and Flask",
-        "image": "frontCourse8",
+        "image": fullStackCourse8,
         "details": "Learn how to build AI applications using Python and Flask, including using machine learning models and deploying web applications.",
         "skills": ["AI", "Python", "Flask", "Machine Learning"],
-        "verify": "https://coursera.org/verify/LPNIZ6X525B0"
+        "verify": "https://coursera.org/verify/DAS26180VHPN"
       },
       {
         "id": 1009,
         "name": "Django Application Development with SQL and Databases",
-        "image": "frontCourse9",
+        "image": fullStackCourse9,
         "details": "This course focuses on developing Django applications, working with SQL databases, and using Django's ORM for data management.",
         "skills": ["Django", "SQL", "Databases", "ORM"],
-        "verify": "https://coursera.org/verify/LPNIZ6X525B0"
+        "verify": "https://coursera.org/verify/D4UPARJ2FFK0"
       },
       {
         "id": 1010,
         "name": "Introduction to Containers w/ Docker, Kubernetes & OpenShift",
-        "image": "frontCourse10",
+        "image": fullStackCourse10,
         "details": "Learn how to use Docker, Kubernetes, and OpenShift for containerization and orchestration, as well as cloud deployment strategies.",
         "skills": ["Docker", "Kubernetes", "OpenShift", "Containers"],
-        "verify": "https://coursera.org/verify/LPNIZ6X525B0"
+        "verify": "https://coursera.org/verify/QI4NA260Y6XM"
       },
       {
         "id": 1011,
         "name": "Application Development using Microservices and Serverless",
-        "image": "frontCourse11",
+        "image": fullStackCourse11,
         "details": "Learn to build scalable applications with microservices and serverless architecture, including deployment and management strategies.",
         "skills": ["Microservices", "Serverless", "Cloud Native", "Scalable Applications"],
-        "verify": "https://coursera.org/verify/LPNIZ6X525B0"
+        "verify": "https://coursera.org/verify/311ENLE4FRMG"
       },
       {
         "id": 1012,
         "name": "Full Stack Application Development Capstone Project",
-        "image": "frontCourse12",
+        "image": fullStackCourse12,
         "details": "The capstone project gives learners the opportunity to apply everything they’ve learned by building a full-stack cloud-native application.",
         "skills": ["Full Stack Development", "Cloud Native", "Capstone Project", "Application Development"],
-        "verify": "https://coursera.org/verify/LPNIZ6X525B0"
+        "verify": "https://coursera.org/verify/8OT8EQ366DS5"
       },
       {
         "id": 1013,
         "name": "Full Stack Software Developer Assessment",
-        "image": "frontCourse13",
+        "image": fullStackCourse13,
         "details": "An assessment that evaluates your full-stack development knowledge and skills, preparing you for real-world application development.",
         "skills": ["Full Stack Development", "Assessment", "Real-World Applications"],
-        "verify": "https://coursera.org/verify/LPNIZ6X525B0"
+        "verify": "https://coursera.org/verify/NAR0OB3AKEGN"
       },
       {
         "id": 1014,
         "name": "Generative AI: Elevate your Software Development Career",
-        "image": "frontCourse14",
+        "image": fullStackCourse14,
         "details": "This course focuses on the impact of generative AI on software development and how to integrate AI techniques into your applications.",
         "skills": ["Generative AI", "Software Development", "AI Integration"],
-        "verify": "https://coursera.org/verify/LPNIZ6X525B0"
+        "verify": "https://coursera.org/verify/ML3PD2OG5L3D"
       },
       {
         "id": 1015,
         "name": "Software Developer Career Guide and Interview Preparation",
-        "image": "frontCourse15",
+        "image": fullStackCourse15,
         "details": "This course helps learners prepare for software developer interviews, covering coding challenges, system design, and interview strategies.",
         "skills": ["Interview Preparation", "Coding Challenges", "System Design", "Career Guidance"],
-        "verify": "https://coursera.org/verify/LPNIZ6X525B0"
+        "verify": "https://coursera.org/verify/8FSFF0XKLSQU"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "institute": "IBM",
+    "name": "DevOps, Cloud, and Agile Foundations",
+    "descrip": "The IBM DevOps, Cloud, and Agile Foundations Professional Certificate program provides a comprehensive introduction to the essential concepts of DevOps, Cloud Computing, and Agile methodologies. Learners gain hands-on experience with key technologies, tools, and best practices used in modern software development and deployment. This program covers cloud models, DevOps culture, Agile principles, and Scrum methodologies to help students build the skills needed for a successful career in cloud and DevOps engineering.",
+    "image": dcaCertificate,
+    "verify": "https://coursera.org/verify/specialization/8HA25429F3SS",
+    "courses": [
+      {
+        "id": 1101,
+        "name": "Introduction to DevOps",
+        "image": dcaCourse1,
+        "details": "This course introduces students to DevOps principles, including the culture, practices, and tools that enable continuous integration and delivery. Topics covered include automation, collaboration, infrastructure as code, and monitoring strategies. Students will learn how DevOps improves efficiency and software quality.",
+        "skills": ["DevOps", "CI/CD", "Infrastructure as Code", "Automation"],
+        "verify": "https://coursera.org/verify/XPFLBUR4M745"
+      },
+      {
+        "id": 1102,
+        "name": "Introduction to Cloud Computing",
+        "image": dcaCourse2,
+        "details": "This course provides an in-depth introduction to cloud computing, covering key concepts such as cloud service models, deployment models, infrastructure, and emerging trends. Students will explore platforms like AWS, Azure, and IBM Cloud, and understand how cloud technologies drive business innovation.",
+        "skills": ["Cloud Computing", "Cloud Infrastructure", "Cloud Service Models"],
+        "verify": "https://coursera.org/verify/GJSCYE4989LF"
+      },
+      {
+        "id": 1103,
+        "name": "Introduction to Agile Development and Scrum",
+        "image": dcaCourse3,
+        "details": "This course covers Agile methodologies and Scrum frameworks. Students will learn how to apply Agile principles, create user stories, conduct sprint planning, and implement Scrum best practices. The course also explores Agile workflows, team collaboration, and iterative development techniques.",
+        "skills": ["Agile", "Scrum", "Sprint Planning", "User Stories"],
+        "verify": "https://coursera.org/verify/A8KIUUY2KT7G"
       }
     ]
   }
-  
 ];
 
 
