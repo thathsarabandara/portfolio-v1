@@ -169,28 +169,43 @@ function Home() {
                     </button>
                 </div>
                 <div className='flex justify-center items-center text-lg md:text-xl mt-10 text-myYellow space-x-5 sm:space-x-7 md:space-x-8'>
-                    <a href=''>
+                    <a 
+                        href='https://github.com/thathsarabandara'
+                        target='blank'
+                    >
                         <FaGithub />
                     </a>
-                    <a href=''>
+                    <a 
+                        href='https://stackoverflow.com/users/23208986/thathsara-bandara'
+                        target='blank'
+                    >
                         <FaStackOverflow />
                     </a>
-                    <a href=''>
+                    <a 
+                        href='https://linkedin.com/in/thathsara-bandara-b403582a7'
+                        target='blank'
+                    >
                         <FaLinkedin />
                     </a>
-                    <a href=''>
-                        <FaDiscord />
-                    </a>
-                    <a href=''>
+                    <a 
+                        href='https://x.com/thathsara2002'
+                        target='blank'
+                    >
                         <FaXTwitter />
                     </a>
-                    <a href=''>
+                    <a href="mailto:shadowsara21@gmail.com?subject=Hello&body=I%20wanted%20to%20reach%20out!">
                         <IoMdMail />
                     </a>
-                    <a href=''>
+                    <a 
+                        href='https://web.facebook.com/profile.php?id=100078113321842'
+                        target='blank'
+                    >
                         <MdFacebook />
                     </a>
-                    <a href=''>
+                    <a 
+                        href='https://www.instagram.com/shadowsara2.1/'
+                        target='blank'
+                    >
                         <FaInstagram />
                     </a>
                 </div>

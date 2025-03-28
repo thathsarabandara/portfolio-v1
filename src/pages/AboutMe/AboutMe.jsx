@@ -17,25 +17,32 @@ function AboutMe() {
 
   const fullText = [
     "",
-    "[INITIALIZING CORE MODULES…]",
+    "> whoami",
+    "Thathsara Bandara - Passionate Software Engineer | Tech Enthusiast | Lifelong Learner",
     "",
-    "🟢 Frontend Manipulation – React.js, Angular, Vue.js, Tailwind CSS ",
-    "🟢 Backend Architectonics – Node.js, Python, PHP, MERN & MEAN stacks ",
-    "🟢 Cloud Synchronization – AWS, Firebase, Docker, Kubernetes, CI/CD",
-    "🟢 AI & IoT Nexus – Neural Networks, Automation, Real-time Processing",
+    "> skills --list  ",
+    "Frontend: React.js, Angular, Vue.js, Tailwind CSS, Bootstrap ",
+    "Backend: Node.js, Python, PHP, Laravel, Express.js, Django, Flask,Fast API, NextJs",
+    "Full-Stack: MERN, MEAN",
+    "DevOps: CI/CD, Docker, Kubernetes, Cloud Deployments",
+    "Databases: MySQL, MongoDB, Postgresql, Redis",
+    "Emerging Tech: AI, IoT, Edge Computing",
     "",
-    "[PROJECTS LOADED…]",
+    "> projects --current",
+    "- Scalable & Modular Learning Management System (LMS)",
+    "- MERN-based Healthcare Services Platform",
+    "- AI & IoT Integrated Solutions",
     "",
-    "Currently engineering a scalable Learning Management System (LMS) designed for seamless education in a hyper-connected world. Optimizing workflows, deploying real-time solutions, and enhancing experiences with intelligent automation.",
+    "> affiliations ",
+    "IEEE | University of Sri Jayewardenepura",
     "",
-    "[IEEE CORE LINK ESTABLISHED]",
+    "> status ",
+    "🚀 Coding | 📚 Learning | 💡 Innovating  ",
     "",
-    "Collaborating with brilliant minds, pushing boundaries in technology, and evolving through innovation.",
+    "> exit  ",
+    "System shutting down... See you in the next deployment! ",
     "",
-    "[FINAL PROTOCOL INITIATED…]",
     "",
-    "Are you ready to disrupt the future?",
-    "🚀 Happy Hacking. "
   ];
 
   useEffect(() => {
@@ -191,7 +198,7 @@ function AboutMe() {
               transition={{ duration: 1, delay: 1 }}
             >
               <motion.pre
-                className="whitespace-pre-wrap overflow-hidden mb-24"
+                className="whitespace-pre-wrap overflow-hidden mb-24 text-sm"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 2, delay: 1 }}

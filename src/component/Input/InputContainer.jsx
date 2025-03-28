@@ -4,7 +4,7 @@ function InputContainer({
     label,
     type = 'text',
     placeholder = '',
-    error = 'This is error message',
+    error = '',
     onChange,
     value,
 }) {
@@ -28,7 +28,7 @@ function InputContainer({
                         value={inputValue}
                         onChange={handleChange}
                         placeholder={placeholder}
-                        className="w-full max-w-[700px] h-8 bg-transparent focus:outline-none"
+                        className="w-full w-[250px] sm:w-[450px] md:w-[700px] h-8 bg-transparent focus:outline-none"
                     />
                     <p className="text-red-500 text-xs mb-1">{error}</p>
                 </div>

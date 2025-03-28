@@ -4,6 +4,7 @@ import { BiLogoTelegram } from 'react-icons/bi'
 import { FaDiscord, FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaStackOverflow, FaTwitter } from 'react-icons/fa6';
 import { SiGmail } from 'react-icons/si';
 import InputContainer from '../../component/Input/InputContainer';
+import emailjs from '@emailjs/browser';
 
 const iconMap = {
   github: FaGithub,
@@ -73,14 +74,15 @@ function Contact() {
     
     if (Object.keys(newErrors).length === 0) {
       emailjs
-        .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
+        .send('service_qhdqmm7', 'template_m6rl8lc', formData , '1s5qylqAVS2gB2rKN')
         .then(
           (result) => {
             console.log('Form submitted successfully:', result.text);
             alert('Message sent successfully!');
+            setFormData({ name: '', email: '', description: '' });
           },
           (error) => {
-            console.error('Error sending message:', error.text);
+            console.log('Error sending message:', error);
             alert('Failed to send message');
           }
         );
@@ -146,14 +148,13 @@ function Contact() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: 'easeInOut', delay:7 }}
           >
-            <AnimatedIcon link="https://github.com/your-profile" platform="github" delay={0.1} />
-            <AnimatedIcon link="https://stackoverflow.com/users/your-profile" platform="stackoverflow" delay={0.2} />
-            <AnimatedIcon link="https://www.linkedin.com/in/your-profile" platform="linkedin" delay={0.3} />
-            <AnimatedIcon link="https://discord.com/users/your-profile" platform="discord" delay={0.4} />
-            <AnimatedIcon link="https://twitter.com/your-profile" platform="twitter" delay={0.5} />
-            <AnimatedIcon link="https://mail.google.com/mail/u/0/" platform="gmail" delay={0.6} />
-            <AnimatedIcon link="https://www.facebook.com/your-profile" platform="facebook" delay={0.7} />
-            <AnimatedIcon link="https://www.instagram.com/your-profile" platform="instagram" delay={0.8} />
+            <AnimatedIcon link="https://github.com/thathsarabandara" platform="github" delay={7.1} />
+            <AnimatedIcon link="https://stackoverflow.com/users/23208986/thathsara-bandara" platform="stackoverflow" delay={7.2} />
+            <AnimatedIcon link="https://linkedin.com/in/thathsara-bandara-b403582a7" platform="linkedin" delay={7.3} />
+            <AnimatedIcon link="https://x.com/thathsara2002" platform="twitter" delay={7.4} />
+            <AnimatedIcon link="mailto:shadowsara21@gmail.com?subject=Hello&body=I%20wanted%20to%20reach%20out!" platform="gmail" delay={7.5} />
+            <AnimatedIcon link="https://web.facebook.com/profile.php?id=100078113321842" platform="facebook" delay={7.6} />
+            <AnimatedIcon link="https://www.instagram.com/shadowsara2.1/" platform="instagram" delay={7.7} />
           </motion.div>
         <div className=''>
           
@@ -164,7 +165,7 @@ function Contact() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, ease: 'easeInOut', delay:8 }}
           >
-            <form onSubmit={handleSubmit}>
+            <form>
               <InputContainer
                 label="Name"
                 value={formData.name}
@@ -196,7 +197,7 @@ function Contact() {
                 height="auto"
               />
 
-            <button type="submit" className="mt-8  border-2 px-8 py-3 rounded-lg hover:bg-white hover:text-black hover:animate-pulse">Submit</button>
+            <button onClick={handleSubmit} className="mt-8  border-2 px-8 py-3 rounded-lg hover:bg-white hover:text-black hover:animate-pulse">Submit</button>
             </form>
             <p className='text-xl text-center font-bold mt-5'>I WILL MEET YOU IN THE METAVERSE</p>
           </motion.div>
