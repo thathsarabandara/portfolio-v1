@@ -46,7 +46,7 @@ import NextJS from '../../assets/images/NextJS.svg';
 import PHP from '../../assets/images/PHP.svg';
 import PostgreSQL from '../../assets/images/PostgreSQL.svg';
 import Postman from '../../assets/images/Postman.svg';
-import PowerShell from "../../assets/images/powershell.svg"; 
+import PowerShell from "../../assets/images/Powershell.svg"; 
 import Prisma from '../../assets/images/Prisma.svg';
 import Python from '../../assets/images/Python.svg';
 import ReactLogo from '../../assets/images/React.svg';
