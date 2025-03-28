@@ -66,7 +66,7 @@ import TypeScript from '../../assets/images/TypeScript.svg';
 import Vite from '../../assets/images/Vite.svg';
 import VSCode from '../../assets/images/VSCode.svg';
 import VueJS from '../../assets/images/VueJS.svg';
-import WordPress from '../../assets/images/WordPress.svg';
+import WordPress from '../../assets/images/Wordpress.svg';
 
 const techLogos = [
   { name: "Angular", src: Angular },
