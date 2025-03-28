@@ -213,7 +213,7 @@ function AppContent() {
 
 function App() {
   return (
-    <Router basename='/portfolio-v1'>
+    <Router >
       <AppContent />
     </Router>
   );
