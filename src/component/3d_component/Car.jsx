@@ -14,7 +14,7 @@ import { SkeletonUtils } from 'three-stdlib'
 
 export default function Car(props) {
   const group = React.useRef()
-  const { scene, animations } = useGLTF('../../public/loading_car/scene.gltf')
+  const { scene, animations } = useGLTF('/public/loading_car/scene.gltf')
   const clone = React.useMemo(() => SkeletonUtils.clone(scene), [scene])
   const { nodes, materials } = useGraph(clone)
   const { actions , names} = useAnimations(animations, group)
@@ -234,4 +234,4 @@ export default function Car(props) {
   )
 }
 
-useGLTF.preload('../../public/loading_car/scene.gltf')
+useGLTF.preload('/public/loading_car/scene.gltf')
