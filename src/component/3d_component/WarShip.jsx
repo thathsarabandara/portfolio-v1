@@ -14,7 +14,7 @@ import { SkeletonUtils } from 'three-stdlib'
 
 export default function WarShip(props) {
   const group = React.useRef()
-  const { scene, animations }= useGLTF('../../public/loading_ship/scene.gltf');
+  const { scene, animations }= useGLTF('/loading_ship/scene.gltf');
   const clone = React.useMemo(() => SkeletonUtils.clone(scene), [scene])
   const { nodes, materials } = useGraph(clone)
   const { actions , names} = useAnimations(animations, group)
@@ -60,4 +60,4 @@ export default function WarShip(props) {
   )
 }
 
-useGLTF.preload('../../public/loading_ship/scene.gltf')
+useGLTF.preload('/loading_ship/scene.gltf')
